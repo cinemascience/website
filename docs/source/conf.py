@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'CinemaScience'
-copyright = '2018, Terry Turton'
-author = 'Terry Turton'
+copyright = '2018, Data Science at Scale Team, Los Alamos National Laboratory'
+author = 'Terry Turton, David Rogers'
 
 # The short X.Y version
 version = ''
