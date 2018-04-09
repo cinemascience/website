@@ -1,6 +1,8 @@
 Cinema Science Specifications
 =============================
 
+A Cinema database is a collection of data that supports an image-based approach to interactive data exploration. It is a set of images and associated metadata.
+
 There are currently three active Cinema specifications or "Specs" with varying levels of functionality.  Official release documentation for each specification is available by clicking on the Specification Film Star name.  Follow the Specification links for details online.
 
 * `Astaire (Spec A)`_ : This is a basic embodiment of the Cinema vision, and is the best way to get started with Cinema. It includes both static and spherical cameras, and includes the capability to turn elements on and off as detailed in the SC paper.  The resulting Spec A database is a colormapped visualization that can be viewed interactively with a standalone application viewer.
