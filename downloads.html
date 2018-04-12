@@ -7,6 +7,7 @@
 <html>
 	<head>
 		<title>Cinema Downloads</title>
+		<link rel="shortcut icon" type="image/png" href="images/cinemascience_mark.png" />
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -25,10 +26,11 @@
 
 		<!-- Header -->
 			<header id="header" class="skel-layers-fixed">
-				<h1><a href="https://github.com/cinemascience">Cinema Science</a></h1>
+				<h1><a href="https://github.com/cinemascience"><img src="images/cinemascience_mark_fullword.png" atl="CinemaScience" /></a></h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
+						<li><a href="overview.html">Overview</a></li>
 						<li><a href="examples.html">Examples</a></li>
 						<li><a href="downloads.html">Downloads</a></li>
 						<li><a href="https://cinemasciencewebsite.readthedocs.io">Documentation</a></li>
@@ -44,18 +46,18 @@
 				</header>
 				<div class="container">
 
+				<hr class="major" />
 					<section> <!-- First row: sphere databases -->
 						<h2>Example Sphere Databases</h2>
 						<a href="#" class="image fit"></a>
-						<p>These are sample Cinema databases  (CDBs) that can be used to explore Cinema functionality </p>
+						<p>These are sample Cinema databases  (CDBs) that can be used to explore Cinema functionality.  Each database includes the control file for that specification: info.json for Spec A & Spec C  or data.csv for Spec D.  Images for each database are organized into the necessary subdirectories.  </p>
 					</section>
 
-					<hr class="major" />
 					<div class="row">
 						<div class="4u">  <!-- was 6u -->
 							<section class="special">
 								<h3><img src="images/exampleSpecA.png" atl="Spec A sphere" class="image fit"/></h3>
-								<p>Spec A Sphere: this database has 1 theta and 20 phi values. It includes the files needed for a "Simple" database:  info.json and the image directory with images stored in subdirectories. </p>
+								<p><small> Spec A Sphere: this "Simple" database has 1 theta and 20 phi values. </small></p>
 								<ul class="actions">
 									<li><a href="http://cinemascience.org/wp-content/uploads/sites/13/2017/11/sphere_a.cdb_.zip" class="button alt">Spec A CDB</a></li>
 								</ul>
@@ -65,7 +67,7 @@
 						<div class="4u">
 							<section class="special">
 								<h3><img src="images/exampleSpecC.png" atl="Spec C sphere" class="image fit"/></h3>
-								<p>Spec C Sphere: this database has 5 theta and 5 phi values.  It includes the files needed for a Spec C database: info.json and the image directory with images stored in subdirectories. </p>
+								<p><small> Spec C Sphere: this database has 5 theta and 5 phi values.  </small> </p>
 								<ul class="actions">
 									<li><a href="http://cinemascience.org/wp-content/uploads/sites/13/2017/10/sphere_c.cdb_.zip" class="button alt">Spec C
 										CDB</a></li>
@@ -76,7 +78,7 @@
 						<div class="4u">
 							<section class="special">
 										<h3><img src="images/exampleSpecD.png" atl="Spec C sphere" class="image fit"/></h3>
-								<p>Spec D Sphere: has 1 theta and 20 phi values.  It includes the files needed for a Spec D database: data.csv file and the image/ directory with images stored in subdirectories. </p>
+								<p><small> Spec D Sphere: this database has 1 theta and 20 phi values.  </small> </p>
 								<ul class="actions">
 									<li><a href="http://cinemascience.org/wp-content/uploads/sites/13/2017/11/sphere_d.cdb_.zip" class="button alt">Spec D CDB</a></li>
 								</ul>
@@ -84,18 +86,20 @@
 						</div>
 					</div> <!-- end first row -->
 
+					<hr class="major" />
 					<section>   <!-- Second row: science databases -->
 						<h2>Science Example Databases</h2>
 						<a href="#" class="image fit"></a>
-						<p>These are more realistic science-based example databases.   </p>
-					</section>					<hr class="major" />
+						<p>These are more realistic science-based example databases. Both are Spec C databases and include multiple channels which can be separately visualized (e.g., turned on or off) with an appropriate viewer.    </p>
+					</section>
+
 					<div class="row">
 						<div class="4u">
 							<section class="special">
 								<h3><img src="images/exampleVPIC.png" atl="VPIC" class="image fit"/> </h3>
-								<p>VPIC Simulation: a VPIC (Vector Particle-in-Cell) plasma simulation. </p>
+								<p><small> VPIC Simulation: a VPIC (Vector Particle-in-Cell) plasma simulation. </small> </p>
 								<ul class="actions">
-									<li><a href="http://cinemascience.org/wp-content/uploads/sites/13/2018/04/vpic_plasma.cdb_.zip" class="button alt">VPIC data</a></li>
+									<li><a href="http://cinemascience.org/wp-content/uploads/sites/13/2018/04/vpic_plasma.cdb_.zip" class="button alt">VPIC CDB</a></li>
 								</ul>
 							</section>
 						</div>
@@ -103,24 +107,25 @@
 						<div class="4u">
 							<section class="special">
 								<h3><img src="images/exampleHACC.png" atl="HACC" class="image fit"/></h3>
-								<p>HACC Simulation:  HACC (Hardware/Hybrid Accelerated Cosmology Code) cosmology simulation. </p>
+								<p><small> HACC Simulation:  HACC (Hardware/Hybrid Accelerated Cosmology Code) cosmology simulation. </small> </p>
 								<ul class="actions">
-									<li><a href="http://cinemascience.org/wp-content/uploads/sites/13/2018/04/hacc_halos_time.cdb_.zip" class="button alt">HACC data</a></li>
+									<li><a href="http://cinemascience.org/wp-content/uploads/sites/13/2018/04/hacc_halos_time.cdb_.zip" class="button alt">HACC CDB</a></li>
 								</ul>
 							</section>
 						</div>
 					</div>  <!-- end second row -->
 
+					<hr class="major" />
 					<section>   <!-- Third row: Viewer downloads -->
 						<h2>Cinema Viewers</h2>
 						<a href="#" class="image fit"></a>
-						<p>These are various Cinema viewers.  </p>
-					</section>					<hr class="major" />
+						<p>These are reference implementations of Cinema viewers that work on the different Cinema specs.   </p>
+					</section>
 					<div class="row">
 						<div class="4u">
 							<section class="special">
 								<h3><img src="images/viewerDesktop.png" atl="Desktop Viewer" class="image fit"/> </h3>
-								<p>Cinema Desktop Viewer: an application to view Spec A & Spec C databases. Choose version (Mac downloads may require starting twice on some systems). </p>
+								<p><small>Cinema Desktop Viewer: an application to view Spec A & Spec C databases. Choose version (Mac downloads may require starting twice on some systems). </small></p>
 								<ul class="actions">
 									<li><a href="http://cinemascience.dsscale.org/cv/qtviewer.build/cinema_1.0_OSX10.12.dmg" class="button alt">Mac OSX 10.12 (Sierra)</a></li>
 									<li><a href="http://cinemascience.dsscale.org/cv/qtviewer.build/cinema_1.0_OSX10.10.dmg" class="button alt">Mac OSX 10.10 (Yosemite)</a></li>
@@ -133,7 +138,7 @@
 						<div class="4u">
 							<section class="special">
 								<h3><img src="images/viewerBrowser.png" atl="Browser based Cinema Viewer" class="image fit"/></h3>
-								<p>Cinema CVLIB: A browser-based Spec A/C viewer.  Run directly from browswer. </p>
+								<p><small>Cinema CVLIB: A browser-based Spec A/C viewer.  Run directly from browser. </small></p>
 								<ul class="actions">
 									<li><a href="http://cinemaviewer.org/" class="button alt">Cinema Browser Viewer</a></li>
 								</ul>
@@ -143,7 +148,7 @@
 						<div class="4u">
 							<section class="special">
 								<h3><img src="images/parallelCoordinates.png" atl="Cinema Explorer" class="image fit"/></h3>
-								<p>Cinema Explorer: A browser-based parallel coordinates viewer.  Download from the Github repository.</p>
+								<p><small>Cinema Explorer: A browser-based Spec D parallel coordinates viewer.  Download from the Github repository.</small></p>
 								<ul class="actions">
 									<li><a href="https://github.com/cinemascience/cinema_explorer" class="button alt">Cinema Explorer</a></li>
 								</ul>

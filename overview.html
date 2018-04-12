@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Cinema Help </title>
+		<title>Cinema Overview</title>
 		<link rel="shortcut icon" type="image/png" href="images/cinemascience_mark.png" />
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
@@ -42,36 +42,43 @@
 		<!-- Main -->
 			<section id="main" class="wrapper style1">
 				<header class="major">
-					<h2>Get Help With Cinema</h2>
-					<p></p>
+					<h2>Cinema Overview</h2>
+					<p>Cinema - A Database Approach to Extreme Scale Visualization and Analysis.  </p>
 				</header>
+				<div class="container">
+					<div class="row"> <!-- This starts a major row/section -->
+						<div class="4u">
+							<section> <!-- This starts a sidebar section -->
+								<h3><img class="image fit" src="images/sampleVis.png" alt="Sample Vis" /></h3>
+								<p>  </p>
+							</section> <!-- This ends a sidebar section -->
+							<hr />
+							<section>  <!-- This starts a sidebar section -->
+								<h3><img class="image fit" src="images/sampleVisBlue.png" alt="Sample Vis" /></h3>
+							</section>  <!-- This ends a sidebar section -->
+						</div>
+						<div class="8u skel-cell-important">
 
-				<div id="specs" class="container">
-					<hr class="major" />
-					 <div class="row">
+							<section> <!-- This starts a main section -->
+							<h4>The Databases:</h4>
+								<p>Cinema represents a novel database approach to in-situ and post-processing scientific workflow that facilitates exploration, visualization, and analysis of both simulation and experimental data.   A Cinema Database consists of data artifacts. Data artifacts can encompass a range of possibilities -- metadata such as run parameters; output variables, derived values, or images.  This database model supports multiple use cases:   </p>
+								<ul style="list-style-type:square">
+									<li> Searching/querying of metadata and data artifacts.  Samples can be searched on metadata, content, position, time, or a combination of all of these.  </li>
+									<li>Real-time interactive visualization of sets of data artifacts. </li>
+									<li>Playing interactive visualization, allowing the user on/off control of elements within the visualization. </li>
+							</ul>
+							<p> An important design philosophy of Cinema is that applications reading a Cinema database can ignore data artifacts, read subsets of channels, and otherwise determine which operations to perform. 	</p>
 
-						<div class="6u"> <!-- first  -->
-							<section class="special">
-								<h3>To get help, simply raise an issue on the Cinema Science GitHub site:</h3>
-								<ul class="actions">
-									<li><a href="https://github.com/cinemascience" class="button alt">Raise an issue</a></li>
-								</ul>
+							<h4>Work with Viewers:</h4>
+							<p>The foundation of Cinema is database specifications that provide a way for common data to be written and read by any application.   A Cinema viewer is an application designed to interact with a Cinema database.  We provide reference implementations of viewers on the <a href="downloads.html">Downloads</a> page , but these are by no means intended to be the only applications within the Cinema community.	Cinema is designed with the flexibility needed for the user to adapt it to the specific workflow.   </p>
 							</section>
-						</div> <!-- Close div class=6u first one -->
+						</div>
+					</div> <!-- This ends  a major row/section -->
 
-						<div class="6u"> <!-- second  -->
-							<section class="special">
-								<h3>Access the documentation and tutorials:</h3>
-								<ul class="actions">
-									<li><a href="http://cinemasciencewebsite.readthedocs.io/en/latest/" class="button alt">Documentation</a></li>
-								</ul>
-							</section>
-						</div> <!-- Close div class=6u second one -->
 
-					</div> <!-- Close div class=row -->
-				</div> <!-- Close div specs -->
 
-			</section> <!-- Close section main -->
+				</div>
+			</section>
 
 			<!-- Footer -->
 				<footer id="footer">
