@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Cinema Specifications & Examples </title>
+		<title>Cinema Examples </title>
 		<link rel="shortcut icon" type="image/png" href="images/cinemascience_mark.png" />
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
@@ -42,55 +42,71 @@
 		<!-- Main -->
 			<section id="main" class="wrapper style1">
 				<header class="major">
-					<h2>Cinema Specifications and Examples</h2>
+					<h2>Cinema Examples</h2>
 				</header>
 				<div id="specs" class="container">
 
 					<section>  <!-- first row -->
-						<p>This page contains videos showing examples of exploring each of the Cinema database Specs.  These videos still need to be made and included.  The images are currently place-holders.  </p>
-						<p>The official Cinema Specifications can be found in the following documents: </p>
-						<ul>
-  						<li><a href="http://cinemascience.dsscale.org/wp-content/uploads/sites/13/2016/10/CinemaSimpleSpec_v1.1_rev01.pdf">Astaire -- Spec A </a>
-							<li><a href="http://cinemascience.org/wp-content/uploads/sites/13/2017/01/CinemaFileSpecification-chaplin_v1.0.pdf">Chaplin -- Spec C </a>
-							<li><a href="http://cinemascience.org/wp-content/uploads/sites/13/2017/12/cinema_specD_v011.pdf">Dietrich -- Spec D </a>
-						</ul>
+<!--						<p>This page contains videos showing instances of exploring each of the Cinema database Specs.  </p> -->
 					</section>
 
 					 <hr class="major" />
 	 					<div class="row">
+
 							<div class="6u"> <!-- first  -->
 								<section class="special">
-									<a href="#" class="image fit"><img src="images/exampleSpecA.png" alt="Cinema Example" /></a>
 									<h3>Cinema Spec A</h3>
-									<p>Spec A: images, colormapping already applied</p>
-									<ul class="actions">
-										<li><a href="#" class="button alt">Play the video</a></li>
-									</ul>
+									<p>A simple sphere with Spec A:  a single theta=0 value with 12 phi values.  This interactive visualization uses the Cinema desktop viewer. Zooming can be done with the mouse scroll wheel.  Rotation can be done via mouse or UI controls.</p>
+									<video class="image fit" controls>
+									  <source src="videos/SimpleSphereDemo1.mp4" type="video/mp4">
+									  Your browser does not support HTML5 video.
+									</video>
 								</section>
 							</div> <!-- Close div class=6u first one -->
 
 						<div class="6u"> <!-- second  -->
 							<section class="special">
-								<a href="#" class="image fit"><img src="images/exampleSpecC.png" alt="Cinema Example" /></a>
-								<h3>Cinema Spec C</h3>
-								<p>Spec C: data abstracts</p>
-								<ul class="actions">
-									<li><a href="#" class="button alt">Play the video</a></li>
-								</ul>
+								<h3>Cinema Spec A</h3>
+								<p>A Spec A database of 7440 images from a Nyx cosmology simulation of dark matter density.  There are 31 time steps and multiple theta/phi values.  Additionally, there are five different isosurfaces available. </p>
+								<video class="image fit" controls>
+									<source src="videos/NyxDemo2.mp4" type="video/mp4">
+									Your browser does not support HTML5 video.
+								</video>
 							</section>
 						</div> <!-- Close div class=6u second one -->
 
 						<div class="6u">  <!-- third  -->
 							<section class="special">
-								<a href="#" class="image fit"><img src="images/parallelCoordinates.png" alt="Parallel Coordinates" /></a>
-								<h3>Cinema Spec D</h3>
-								<p>Spec D: browser based parallel coordinate analysis approach</p>
-								<ul class="actions">
-									<li><a href="#" class="button alt">Play the video</a></li>
-								</ul>
+								<h3>Cinema Spec C</h3>
+								<p>A Spec C database of a cosmology dark matter halo simulations.  The halo cores and the volume visualization are saved separately and can be turned on and off separately enabling different views of the information available in the data.  The data is saved as a function of time, theta, and phi. </p>
+								<video class="image fit" controls>
+									<source src="videos/HaloVolDemo.mp4" type="video/mp4">
+									Your browser does not support HTML5 video.
+								</video>
 							</section>
 						</div> <!-- Close div class=6u third one -->
 
+						<div class="6u">  <!-- fourth  -->
+							<section class="special">
+								<h3>Cinema:Explorer - Spec D</h3>
+								<p> The parallel coordinates view is used to explore the Nyx simulation.  The parallel coordinates view can be used to select images with similar properties.  The scatterplot can be used to explore correlations between variables.  The variables in the database include time, phi, theta, entropy, sample number, and data abstracts such as Hu moments and Canny edge value.   </p>
+								<video class="image fit" controls>
+									<source src="videos/NyxExplorerDemo.mp4" type="video/mp4">
+									Your browser does not support HTML5 video.
+								</video>
+							</section>
+						</div> <!-- Close div class=6u fourth one -->
+
+						<div class="6u">
+							<section class="special">
+								<h3>Browser-based Viewer Examples</h3>
+								<p>The browser-based Cinema viewer can be used to explore a set of online science-based Cinema examples.</p>
+								<<img src="images/viewerBrowser.png" atl="Browser based Cinema Viewer" class="image fit"/>
+								<ul class="actions">
+									<li><a href="http://cinemaviewer.org/" class="button alt">Cinema Browser Viewer</a></li>
+								</ul>
+							</section>
+						</div>
 
 					</div> <!-- Close div class=row -->
 				</div> <!-- Close div specs -->
