@@ -1,9 +1,7 @@
-CINEMA_COMPONENTS
+cinema_components
 =================
 
 *cinema_components* is a javascript library containing prebuilt components for viewing and querying Cinema Spec D databases.
-
-Author: Cameron Tauxe
 
 Components
 ----------
