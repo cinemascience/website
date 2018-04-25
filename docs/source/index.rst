@@ -12,6 +12,7 @@ Cinema Science is an ecosystem for large scale data analysis, exploration, and v
    gettingstarted
    specifications
    viewers
+   cinemaComponents
 
 
 
