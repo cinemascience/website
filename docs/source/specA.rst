@@ -16,7 +16,7 @@ JSON metadata file
 Together, the image collection and JSON file make up the Cinema *Simple* or *Spec A* database.
 
 *Simple* Schema Definition
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------
 The *simple* schema consists of:
 
 Header information
