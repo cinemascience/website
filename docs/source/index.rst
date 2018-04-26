@@ -13,8 +13,14 @@ Cinema Science is an ecosystem for large scale data analysis, exploration, and v
    specifications
    viewers
    cinema_components
+   cinema_explorer
    cinema_lib
    cinema_asqlpy
+   cinema_bandit
+   cinema_newsfeed
+   cinema_debye_scherrer
+   cinema_unityviewer
+   cinema_quest
 
 
 Indices and tables
