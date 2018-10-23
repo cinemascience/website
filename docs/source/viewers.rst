@@ -1,42 +1,31 @@
-Cinema Science Viewers
+CinemaScience Viewers
 ======================
 
-Todo: This section will detail the Cinema viewers.
+CinemaScience provides reference viewers and flexible components for users to build application specific viewers.
 
+Cinema:Compare
+--------------
 
-.. toctree::
-   :maxdepth: 2
+**Cinema:Compare** is an interactive visualization approach to exploring Spec D Cinema databases.  It can be used with single databases to rotate around a visualization as with the MPAS-Ocean simulation.
 
-Application Viewer
-------------------
-
-The basic application viewer for Spec A and C can be downloaded from the Cinema Science `download page <https://cinemascience.github.io/>`_.  This is a basic application that can be used to explore Cinema Spec A and C databases.  This example image shows the temperature variable from an asteroid impact database.  The database allows the user to explore the simulation in time, theta, and phi.  The user interface controls are defined by the arguments given in the info.json file.
-
-.. image:: AsteroidExample2.png
+.. image:: CinemaCompareMPAS.png
    :height: 250px
    :scale: 100 %
-   :alt: Asteroid image
+   :alt: MPAS image
    :align: left
 
-Browser-based Viewer
----------------------
+**Cinema:Compare** can also be used to compare multiple databases as with this Warp plasma accelerator visualization that compares (left) isosurfaces found with a topological analysis versus (right) isosurfaces based on regular spacing.
 
-The browser based viewer for Spec A and C can be found on at   `Cinema Viewer <https://cinemaviewer.org/>`_, a demo javascript CinemaViewer and sample Cinema databases.  The data is loaded from an AWS elastic filesystem to the AWS instance hosting the website.
-
-- Asteroid Impact Volume Rendered Cinema Database
-- Ocean Vorticity Cinema Database (shown below)
-- VPIC Data OSPRay Volume Rendered Cinema Database
-
-.. image:: MPASBrowser.png
-      :height: 250px
-      :scale: 100 %
-      :alt: MPAS image
-      :align: left
+.. image:: CinemaCompareWarp.png
+   :height: 250px
+   :scale: 100 %
+   :alt: Warp image
+   :align: left
 
 Cinema:Explorer
 ---------------
 
-Cinema:Explorer is a browser based viewer for Spec D databases.  It includes a parallel coordinates view and a scatterplot view. The columns are the data artifacts or derived quantities that are defined in the data.csv file for the Spec D database.  This example is shows the dark matter density from the Nyx cosmological simulation.  Note how one can choose a subset of the images to view by selecting a region along one of the variable axes.  
+**Cinema:Explorer** is a browser based viewer for Spec D databases.  It includes a parallel coordinates view and a scatterplot view. The columns are the data artifacts or derived quantities that are defined in the data.csv file for the Spec D database.  This example is shows the dark matter density from the Nyx cosmological simulation.  Note how one can choose a subset of the images to view by selecting a region along one of the variable axes.
 
 .. image:: NyxExplorer.png
       :height: 250px
@@ -47,9 +36,22 @@ Cinema:Explorer is a browser based viewer for Spec D databases.  It includes a p
 Other Viewers
 -------------
 
-The `Cinema Science github page <https://github.com/cinemascience>`_ contains other Cinema viewers and modules designed to help the user develop application-specific viewers.  The Cinema viewer projects include:
+The `CinemaScience GitHub`_ page contains other Cinema viewers and modules designed to help the user develop application-specific viewers.  The Cinema viewer projects include:
 
-- `cinema_components <https://github.com/cinemascience/cinema_components>`_ A javascript library containing prebuilt components for viewing and querying Cinema SpecD databases.
-- `cinema_explorer <https://github.com/cinemascience/cinema_explorer>`_ A parallel coordinates-based viewer for Spec-D Cinema Databases.
-- `cinema_newsfeed <https://github.com/cinemascience/cinema_newsfeed>`_
-- `cinema_quest <https://github.com/cinemascience/cinema_quest>`_ An interactive visual tool for querying Cinema Database ensembles.
+- `cinema_components`_ A javascript library containing prebuilt components for viewing and querying Cinema SpecD databases.
+- `cinema_newsfeed`_ A pipeline approach to present analysis results to the user.
+- `cinema_quest`_ An interactive visual tool for querying Cinema Database ensembles.
+- `cinema_debye_scherrer`_ An interactive web-based tool to visualize multiple datasets.
+- `cinema_simpleviewers`_ A set of simple viewers to be used as examples to create custom Cinema viewers.
+- `cinema_unityviewer`_ An experimental viewer based on the Unity game engine.
+
+.. _CinemaScience GitHub : https://github.com/cinemascience
+.. _cinema_components :  https://github.com/cinemascience/cinema_components
+.. _cinema_newsfeed :  https://github.com/cinemascience/cinema_newsfeed
+.. _cinema_quest : https://github.com/cinemascience/cinema_quest
+.. _cinema_debye_scherrer : https://github.com/cinemascience/cinema_debye_scherrer
+.. _cinema_simpleviewers : https://github.com/cinemascience/cinema_simpleviewers
+.. _cinema_unityviewer : https://github.com/cinemascience/cinema_unityviewer
+
+.. toctree::
+   :maxdepth: 2
