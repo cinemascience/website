@@ -13,6 +13,9 @@ CinemaScience is an ecosystem for large scale data analysis, exploration, and vi
    specifications
    viewers
    algorithms-tools
+   tutorial_writers
+   tutorial_viewers
+   tutorial_other
 
 
 Indices and tables
