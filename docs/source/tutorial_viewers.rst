@@ -1,7 +1,9 @@
+.. _ref_label_viewer_tutorial:
+
 CinemaScience Tutorial: Viewers
 ===============================
 
-This tutorial will help the user explore the CinemaScience ecosystem.  It will explore how to view Cinema databases (CDBs) with the standard Cinema Viewers.
+This tutorial will help the user explore the CinemaScience ecosystem.  It will discuss how to view Cinema databases (CDBs) with the standard Cinema Viewers.
 
 The `CinemaScience GitHub`_ page and the `CinemaScience website`_ are useful sources for more information and ideas.
 
@@ -74,9 +76,9 @@ Opening **index.html** in Firefox:
 
     $ open index.html -a Firefox
 
-will bring up the Cinema\:Compare viewer.  The sliders allow you to change the image size and the orientation.  A video of a large MPAS-Ocean Cinema database in Cinema:Compare can be seen on the `CinemaScience Examples`_ website.
+will bring up the Cinema\:Compare viewer.  The sliders allow you to change the image size and the orientation.
 
-.. image:: CinemaCompareSphere.png
+.. image:: images/CinemaCompareSphere.png
     :width: 98%
     :alt: MPAS image
     :align: left
@@ -90,7 +92,7 @@ Editing the **dataSets** variable in **index.html** file to compare multiple dat
          var dataSets = [ "data/wavelet1.cdb", "data/wavelet2.cdb", "data/wavelet3.cdb" ];
       // END : Array of databases to view
 
-.. image:: CinemaCompareWavelets.png
+.. image:: images/CinemaCompareWavelets.png
     :width: 98%
     :align: left
 
@@ -99,6 +101,8 @@ Note that mistyping a database name or forgetting the **data/** directory part w
 .. code::
 
    TypeError: results is undefined
+
+Note that videos showing Cinema:Compare for single and multiple databases can be seen on the `CinemaScience Examples`_ website.
 
 Cinema:Explorer
 ^^^^^^^^^^^^^^^
@@ -161,53 +165,91 @@ Opening the **cinema_explorer/cinema_explorer.html** file in Firefox
 
 will bring up Cinema:Explorer in a browser window.  The default view has a parallel coordinates display of the **data.csv** columns.  Each column corresponds to an axis.
 
-.. image:: CinemaExplorerSphere.png
+.. image:: images/CinemaExplorerSphere.png
     :width: 98%
     :align: left
 
 The database names, as given in the **databases.json** control file, will appear in a dropdown menu under **Select Database:** in the Cinema:Explorer browser window.  After selecting a CDB, click on the **Load** button to switch to that CDB.
 
-.. image:: SelectDatabaseDropdown.png
+.. image:: images/SelectDatabaseDropdown.png
     :width: 45%
+    :scale: 115%
     :align: left
-.. image:: SelectDatabaseLoad.png
+
+.. image:: images/SelectDatabaseLoadButton.png
     :width: 45%
-    :align: right
+    :scale: 90%
+    :align: left
 
-Under the parallel coordinates, the default tab is the **Image Spread** component.  The image spread includes controls to change the image size, the results per page, and the sort variable and order.  Switching to the **Big Bogus 2** database, there are several additional axes of (bogus) variables and more images than can fit in a single page:
+Under the parallel coordinates, the default tab is the **Image Spread** component.  The image spread includes controls to change the image size, the results per page, and the sort variable and order.  Let's switch to the **Big Bogus 2** database.  It has several additional axes of (bogus) variables and more images than can fit in a single page.  Note that Cinema:Explorer switches between Canvas and SVG versions to accommodate the size of the database.
 
-.. image:: BigBogus2Overview.png
+.. image:: images/BigBogus2Overview.png
     :width: 98%
     :align: left
 
-The user can use the page navigation widget at the bottom of the **Image Spread** to cycle through all the images.
+The page navigation widget at the bottom of the **Image Spread** allows the user to cycle through all the images.
 
-.. image:: BigBogus2PageNavWidget.png
-     :height: 250px
+.. image:: images/PageNavWidget.png
+     :width: 95%
      :align: left
 
 
 The second tab, on the right, is a **ScatterPlot** component.  Each axis variable can be chosen from a dropdown menu of all axes so each variable can be plotted against any other variable.
 
-.. image:: ScatterPlotExample.png
+.. image:: images/ScatterPlotExample.png
     :width: 98%
     :align: left
 
-The parallel component view provides a standard set of flexible actions to select and highlight data.  Hovering over a specific data point or image in the CDB highlights its trace in the parallel coordinates plot and brings up the detailed information from that database row in the image spread:
+The parallel component view provides a standard set of flexible actions to select and highlight data.  Hovering over a specific data point or image in the CDB highlights its trace in the parallel coordinates plot and brings up a card with the detailed information from that database row:
 
-.. image:: ParallelCoorHighlight1.png
-    :width: 46%
+.. image:: images/PCoordHighlight.png
+    :width: 100%
     :align: left
-.. image:: ParallelCoorHighlight2.png
-    :width: 46%
-    :align: right
 
+Another useful feature is a modal view.  Clicking on a single image will bring up that image for closer inspection. Clicking anywhere in the main screen will dismiss the modal image.  Here we select the image highlighted above.
+
+.. image:: images/ModalExample.png
+    :width: 100%
+    :align: left
+
+
+A subset of the data can be selected via the parallel component axes.  Left-mouse-click-hold-and-drag to select a range on an axis.  A subset of six of the original 20 images is now visible:
+
+.. image:: images/AxisSelection1.png
+    :width: 95%
+    :align: left
+
+That range can be shifted by hovering over the selected range then left-mouse-click-hold-and-drag.  Or it can be modified by selecting one edge and dragging just one edge to increase or decrease the selection range.  Here, the range has been decreased to only select four of the database rows/images:
+
+.. image:: images/AxisSelection2.png
+    :width: 95%
+    :align: left
+
+The selection can be cancelled by clicking on the previously selected axis.  This is a particularly useful feature to, e.g., identify and explore outliers in the data.
+
+Other Cinema Viewers and Components
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CinemaScience includes additional components that can be added by the user to create analysis and data specific viewers. These components include:
+
+- PcoordSVG
+- PcoordCanvas
+- Glyph
+- ImageSpread
+- Query
+- ScatterPlotSVG
+- ScatterPlotCanvas
+
+Details information on these components can be found on the `cinema_components GitHub`_ page.
+
+Additionally, there are other application-specific Cinema viewers that are useful examples and inspiration for Cinema users and developers.  We invite you to explore the `CinemaScience GitHub`_ for an up-to-date listing of example viewers.
 
 .. _CinemaScience GitHub : https://github.com/cinemascience
 .. _CinemaScience website : https://cinemascience.github.io
 .. _cinema_compare : https://github.com/cinemascience/cinema_compare
 .. _cinema_explorer : https://github.com/cinemascience/cinema_explorer
 .. _CinemaScience Examples : https://cinemascience.github.io/examples.html
+.. _cinema_components GitHub : https://github.com/cinemascience/cinema_components
 
 .. toctree::
    :maxdepth: 2

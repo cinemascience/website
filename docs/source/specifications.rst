@@ -10,6 +10,8 @@ With the latest Cinema release v1.3, Cinema has converged on a single specificat
 
 * `Dietrich (Spec D)`_ : This updated specification includes multiple files per database entry and arbitrary data.  It has a suite of flexible viewers and view components for a wide range of analysis approaches.
 
+The tutorial on writers, :ref:`ref_label_writer_tutorial`, provides detailed ways to produce Cinema databases.  
+
 Deprecated Specifications:
 --------------------------
 

@@ -26,7 +26,7 @@ This example is the header row and first few rows of the data.csv file for a Nyx
 
 The file structure for the data images is thus arranged by time step then phi then theta and finally has the images for each of the five density isosurfaces:
 
-.. image:: NyxFileSystemExplorer.png
+.. image:: images/NyxFileSystemExplorer.png
    :height: 250px
    :scale: 100 %
    :alt: Spec D file system
