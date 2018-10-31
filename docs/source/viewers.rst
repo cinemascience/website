@@ -9,16 +9,14 @@ Cinema:Compare
 **Cinema:Compare** is an interactive visualization approach to exploring Spec D Cinema databases.  It can be used with single databases to rotate around a visualization as with the MPAS-Ocean simulation.
 
 .. image:: images/CinemaCompareMPAS.png
-   :height: 250px
-   :scale: 100 %
+   :width: 97%
    :alt: MPAS image
    :align: left
 
 **Cinema:Compare** can also be used to compare multiple databases as with this Warp plasma accelerator visualization that compares (left) isosurfaces found with a topological analysis versus (right) isosurfaces based on regular spacing.
 
 .. image:: images/CinemaCompareWarp.png
-   :height: 250px
-   :scale: 100 %
+   :width: 97%
    :alt: Warp image
    :align: left
 
@@ -28,10 +26,9 @@ Cinema:Explorer
 **Cinema:Explorer** is a browser based viewer for Spec D databases.  It includes a parallel coordinates view and a scatterplot view. The columns are the data artifacts or derived quantities that are defined in the data.csv file for the Spec D database.  This example is shows the dark matter density from the Nyx cosmological simulation.  Note how one can choose a subset of the images to view by selecting a region along one of the variable axes.
 
 .. image:: images/NyxExplorer.png
-      :height: 250px
-      :scale: 100 %
-      :alt: Cinema Explorer Example
-      :align: left
+    :width: 97%
+    :alt: Cinema Explorer Example
+    :align: left
 
 Other Viewers
 -------------
