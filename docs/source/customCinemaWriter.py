@@ -50,8 +50,8 @@ for index, row in dfRun.iterrows():              # select an image to show for t
     thisValue = row['newVar']
     thisImage = inputDir + 'run_{}_{}_{}.png'.format(thisValue, runParams[0],runParams[1])
     if os.path.isfile(thisImage):                # check if it exists and if so
-         row['FILE'] = imageDir + thisImage      # set the FILE variable to that image & move it to the image directory
-         os.system('/bin/mv ' + inputDir+thisImage +' '+ imageDir+'/.')
+         row['FILE'] = imageDir + thisImage      # set the FILE variable to that image
+         os.system('/bin/mv ' + inputDir+thisImage +' '+ imageDir+'/.')  # and move it to the image directory
 
 # Write out the dataframe to a Cinema database data.csv
 datafilename = dataDir+'/data.csv'

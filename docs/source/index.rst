@@ -1,3 +1,4 @@
+.. _label_index:
 
 Welcome to CinemaScience's documentation
 ========================================
@@ -13,7 +14,7 @@ CinemaScience is an ecosystem for large scale data analysis, exploration, and vi
    specifications
    viewers
    algorithms-tools
-   tutorial_writers
+   tutorial_workflows
    tutorial_viewers
    tutorial_other
 

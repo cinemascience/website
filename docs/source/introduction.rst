@@ -1,3 +1,5 @@
+.. _label_introduction:
+
 What is Cinema?
 ===============
 

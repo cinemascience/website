@@ -1,7 +1,9 @@
+.. _label_viewers:
+
 CinemaScience Viewers
 ======================
 
-CinemaScience provides reference viewers and flexible components for users to build application specific viewers.  The basic viewers are introduced here.  A full viewer tutorial is available at  :ref:`ref_label_viewer_tutorial`.
+CinemaScience provides reference viewers and flexible components for users to build application specific viewers.  The basic viewers are introduced here.  A full viewer tutorial is available at  :ref:`label_tutorial_viewers`.
 
 Cinema:Compare
 --------------
@@ -19,6 +21,8 @@ Cinema:Compare
    :width: 97%
    :alt: Warp image
    :align: left
+
+.. _label_cinema_explorer:
 
 Cinema:Explorer
 ---------------

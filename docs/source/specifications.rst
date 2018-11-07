@@ -1,19 +1,21 @@
+.. _label_specifications:
+
 CinemaScience Specifications
 ============================
 
 A Cinema database is a collection of data abstracts that can be accessed for visualization or interactive data exploration via a viewer application.
 
-Current Specifications:
------------------------
+Current Specification: Spec D
+-----------------------------
 
 With the latest Cinema release v1.3, Cinema has converged on a single specification, Spec D, that incorporates the flexibility and functionality of previous releases while expanding the Cinema data specifications.  Official `Release Notes`_ are available on the `CinemaScience GitHub`_ page.
 
 * `Dietrich (Spec D)`_ : This updated specification includes multiple files per database entry and arbitrary data.  It has a suite of flexible viewers and view components for a wide range of analysis approaches.
 
-The tutorial on writers, :ref:`ref_label_writer_tutorial`, provides detailed ways to produce Cinema databases.  
+The workflow tutorial, :ref:`label_workflow`, provides detailed ways to produce Cinema databases.
 
-Deprecated Specifications:
---------------------------
+Deprecated Specifications: A & C
+--------------------------------
 
 These specifications are no longer supported.
 
@@ -25,11 +27,8 @@ These specifications are no longer supported.
 .. _Release Notes : https://github.com/cinemascience/cinema/blob/master/doc/release/1.3/notes.md
 .. _CinemaScience GitHub : https://github.com/cinemascience
 
-Details:
---------
-
 .. toctree::
    :maxdepth: 2
-   :caption: Specifications
+   :caption: Spec D Details
 
    specD

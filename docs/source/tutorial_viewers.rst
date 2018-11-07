@@ -1,7 +1,7 @@
-.. _ref_label_viewer_tutorial:
+.. _label_tutorial_viewers:
 
-CinemaScience Tutorial: Viewers
-===============================
+Tutorial: Cinema Viewers
+========================
 
 This tutorial will help the user explore the CinemaScience ecosystem.  It will discuss how to view Cinema databases (CDBs) with the standard Cinema Viewers.
 
@@ -9,14 +9,14 @@ The `CinemaScience GitHub`_ page and the `CinemaScience website`_ are useful sou
 
 Viewing Cinema Databases
 ------------------------
-*Note: Cinema databases should be viewed in Firefox to avoid security errors.*
+**Note: Cinema databases should be viewed in Firefox to avoid cross origin security errors.**
 
-The two basic Cinema viewers operate on the Cinema Spec D specification.  In each case, CDBs are assumed to reside in a data/ directory.  Each CDB consists of a default data.csv file with columns of data abstracts following Spec D requirements and any subdirectories needed for the data abstracts such as images or vti files or additional csv files.  The control of the database viewers is described below.
+The two basic Cinema viewers operate on the Cinema Spec D specification.  In each case, CDBs are assumed to reside in a **data/** directory.  Each CDB consists of a default **data.csv** file with columns of data abstracts following Spec D requirements, :ref:`label_specifications`, and any subdirectories needed for the data abstracts such as images or vti files or additional csv files.  The control of the database viewers is described below.
 
 Cinema:Compare
 ^^^^^^^^^^^^^^
 
-Cinema:Compare is designed to access the images within a CDB, providing sliders spanning the values in the databases in order to select a specific image or set of comparison images.   Cinema:Compare can be downloaded from the `cinema_compare`_ GitHub page.  This download will result in several directories and an **index.html**:
+Cinema:Compare is designed to access the images within one or more CDBs, providing sliders spanning the values in the databases in order to select a specific image or set of comparison images.   Cinema:Compare can be downloaded from the `cinema_compare`_ GitHub page.  This download will result in several directories and an **index.html**:
 
 .. code:: bash
 
@@ -26,14 +26,14 @@ Cinema:Compare is designed to access the images within a CDB, providing sliders 
       doc
       index.html
 
-The data/ directory includes a test CDB, the database file, data.csv, and the image/ subdirectory with the images arranged into subfolders by phi.
+The **data/** directory includes a test CDB, **sphere.cdb** with its required **data.csv**, and an **image/** subdirectory with the images arranged into subfolders by the phi variable.
 
 .. code:: bash
 
   cinema_compare/data/sphere.cdb/data.csv
   cinema_compare/data/sphere.cdb/image/-18/0.png
 
-In the default sphere example, there are 20 phi values and 1 theta value saved in the data.csv:
+In the default sphere example, there are 20 phi values and 1 theta value saved in the **data.csv**:
 
 .. code::
 
@@ -84,7 +84,9 @@ will bring up the Cinema\:Compare viewer.  The sliders allow you to change the i
     :align: left
 
 
-Editing the **dataSets** variable in **index.html** file to compare multiple databases. The sliders control all three databases in common:
+Edit the **dataSets** variable in **index.html** file to compare multiple databases. Multiple databases are not required to have matching variable ranges.  The viewer will select the maximum range and display a default null image if one of the databases does not have that corresponding data row.
+
+The sliders control all three databases in common:
 
 .. code:: javascript
 
@@ -96,7 +98,7 @@ Editing the **dataSets** variable in **index.html** file to compare multiple dat
     :width: 98%
     :align: left
 
-Note that mistyping a database name or forgetting the **data/** directory part will result in a **TypeError**.  Open the console window if nothing appears and check for the error.  If so, check the **dataSets** variable in the **index.html** file for errors.
+**Common Error Note**: Mistyping a database name or forgetting the **data/** directory part will result in a **TypeError**.  Open the console window if nothing appears and check for the error.  If so, check the **dataSets** variable in the **index.html** file for errors.
 
 .. code::
 
@@ -107,7 +109,7 @@ Note that videos showing Cinema:Compare for single and multiple databases can be
 Cinema:Explorer
 ^^^^^^^^^^^^^^^
 
-Cinema\:Explorer is a parallel coordinates approach to selecting and viewing data in a Cinema database.  Cinema\:Explorer can be downloaded from the `cinema_explorer`_ GitHub page.  This download will result in several directories and an cinema_explorer.html:
+Cinema\:Explorer is a parallel coordinates approach to selecting and viewing data in a Cinema database.  Cinema\:Explorer can be downloaded from the `cinema_explorer`_ GitHub page.  This download will result in several directories and an **cinema_explorer.html**:
 
 .. code:: bash
 
@@ -117,7 +119,7 @@ Cinema\:Explorer is a parallel coordinates approach to selecting and viewing dat
       doc
       cinema_explorer.html
 
-The default **data/** directory contains subdirectories with example CDBs to illustrate the range of functionality of Cinema:Explorer.  Again, each CDB consists of a **data.csv** file and an **image/** subdirectory or other subdirectories as needed for its data artifacts.  For example, file_types.cdb includes a **wavelet/** subdirectory with vti files that can be viewed with Cinema:Explorer.
+The default **data/** directory contains subdirectories with example CDBs to illustrate the range of functionality of Cinema\:Explorer.  Again, each CDB consists of a **data.csv** file and any needed subdirectories for its data artifacts.  An **image/** directory is common and the **file_types.cdb** includes a **wavelet/** subdirectory with vti files that can be viewed with Cinema\:Explorer.
 
 .. code:: bash
 
@@ -136,7 +138,7 @@ The default **data/** directory contains subdirectories with example CDBs to ill
   sphere_multi-image.cdb/
   sphere... code-block::
 
-The set of databases for Cinema\:Explorer is defined in the **databases.json** file found in:
+The set of databases for Cinema\:Explorer is defined in a **databases.json** file found in:
 
 .. code:: bash
 
@@ -163,13 +165,13 @@ Opening the **cinema_explorer/cinema_explorer.html** file in Firefox
 
     $ open cinema_explorer.html -a Firefox
 
-will bring up Cinema:Explorer in a browser window.  The default view has a parallel coordinates display of the **data.csv** columns.  Each column corresponds to an axis.
+will bring up Cinema\:Explorer in a browser window.  The default view has a parallel coordinates display of the **data.csv** columns.  Each column corresponds to an axis.
 
 .. image:: images/CinemaExplorerSphere.png
     :width: 98%
     :align: left
 
-The database names, as given in the **databases.json** control file, will appear in a dropdown menu under **Select Database:** in the Cinema:Explorer browser window.  After selecting a CDB, click on the **Load** button to switch to that CDB.
+By default, the first database listed in **databases.json** will load initially.  All databases in **databases.json** will appear in a dropdown menu under **Select Database:** in the Cinema:Explorer browser window.  After selecting a CDB, click on the **Load** button to switch to that CDB.
 
 .. image:: images/SelectDatabaseDropdown.png
     :width: 45%
@@ -181,7 +183,7 @@ The database names, as given in the **databases.json** control file, will appear
     :scale: 90%
     :align: left
 
-Under the parallel coordinates, the default tab is the **Image Spread** component.  The image spread includes controls to change the image size, the results per page, and the sort variable and order.  Let's switch to the **Big Bogus 2** database.  It has several additional axes of (bogus) variables and more images than can fit in a single page.  Note that Cinema:Explorer switches between Canvas and SVG versions to accommodate the size of the database.
+Under the parallel coordinates, the default tab is the **Image Spread** component.  The image spread includes controls to change the image size, the results per page, and the sort variable and order.  Let's switch to the **Big Bogus 2** database.  It has several additional axes of (bogus) variables and more images than can fit in a single page.  Note that Cinema\:Explorer switches between Canvas and SVG versions to accommodate the size of the database.
 
 .. image:: images/BigBogus2Overview.png
     :width: 98%
@@ -219,13 +221,57 @@ A subset of the data can be selected via the parallel component axes.  Left-mous
     :width: 95%
     :align: left
 
-That range can be shifted by hovering over the selected range then left-mouse-click-hold-and-drag.  Or it can be modified by selecting one edge and dragging just one edge to increase or decrease the selection range.  Here, the range has been decreased to only select four of the database rows/images:
+That range can be shifted by hovering over the selected range then left-mouse-click and hold-and-drag.  Or it can be modified by selecting one edge and dragging just that edge to increase or decrease the selection range.  Here, the range has been decreased to only select four of the database rows/images:
 
 .. image:: images/AxisSelection2.png
     :width: 95%
     :align: left
 
-The selection can be cancelled by clicking on the previously selected axis.  This is a particularly useful feature to, e.g., identify and explore outliers in the data.
+The selection can be cancelled by clicking on the previously selected axis.  Selection on the axes is a particularly useful feature to, e.g., identify and explore outliers in the data.
+
+Optional Control Fields for databases.json
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+There are three optional control fields that can be implemented within the **database.json** file to control the data viewed on the parallel coordinates axes.
+
+- **filter** is a JSON regular expression which removes the specified axes (columns) whose header matches the regex.  Note that adding **filter** will override the default filtering for any FILE* columns so those will need to be explicitly removed.  This example with the Bogus 1 data removes the Float_6 axis and all axes that begin with FILE:
+
+.. code:: json
+
+  {
+    "name" : "Bogus 1",
+    "directory" : "data/bogus/bogus_1.cdb",
+    "filter" : "(^Float_6)|(^FILE)"
+  }
+
+- **query** queries the database and only displays those rows that match the criterion for the columns queried.  This example with the Bogus 1 data displays only those rows where Float_6 is within the range [20-70] and Interger_2 is within the range [40, 60]:
+
+.. code:: json
+
+  {
+    "name" : "Bogus 1",
+    "directory" : "data/bogus/bogus_1.cdb",
+    "query": {
+      "Float_6" : [20, 70],
+      "Integer_2": [40, 60]
+    }
+  }
+
+- **selection** applies an axis selection when the database is loaded but loads all database rows.  This example with the Bogus 1 data brings up the database with the selection on Integer_3 already in place:
+
+.. code:: json
+
+  {
+    "name" : "Bogus 1",
+    "directory" : "data/bogus/bogus_1.cdb",
+    "selection": {
+			"Integer_3": [20, 50]
+		}
+  }
+
+.. image:: images/selectionExample.png
+    :width: 95%
+    :align: left
 
 Other Cinema Viewers and Components
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
