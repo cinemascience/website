@@ -5,6 +5,8 @@ CinemaScience Viewers
 
 CinemaScience provides reference viewers and flexible components for users to build application specific viewers.  The basic viewers are introduced here.  A full viewer tutorial is available at  :ref:`label_tutorial_viewers`.
 
+.. _label_cinema_compare:
+
 Cinema:Compare
 --------------
 
