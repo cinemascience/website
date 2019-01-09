@@ -60,7 +60,35 @@ The `ParaView Python Documentation`_ is an excellent source of information on ho
 PostProcessing via VisIt Cinema Export Wizard
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The current VisIt release v2.13.2 does not yet include the Cinema Export Wizard.  The Cinema Spec D export wizard will be included in the upcoming VisIt release v3.0 (scheduled for Fall 2018).  This tutorial will be updated when that change takes place.
+A Cinema Export Wizard is an addition to the VisIt v3.0 release, currently in beta release.  This tutorial is based on the beta release and will be updated when VisIt v3.0 is officially released.
+
+A Cinema database can be exported directly from VisIt. This can be demonstrated with sample data that can be downloaded from the `VisIt tutorial`_ page.  Start by clicking on **Open** to bring up the VisIt **File open** dialog box.  Navigate to the correct directory, select the data you wish to visualize and click **OK**:
+
+.. image:: images/visit_openDataFiles.png
+    :width: 98%
+    :align: left
+
+Click **Add**, select **Pseudocolor** and choose an appropriate variable such as **pressure**.
+On the control bar, click **File** --> **Save To Cinema** to bring up the VisIt Cinema database dialog:
+
+.. image:: images/visit_pseudocolorPressure.png
+    :width: 48%
+    :align: left
+
+.. image:: images/visit_saveToCinema.png
+    :width: 48%
+
+
+In the Cinema wizard, change the database name and path as needed, select Spec D for the current Cinema specification and choose **Use screen capture** to select the entire VisIt viewing window.  The **Camera type** can be either **static** (no rotation, only time evolution of the currently rendered view) or **phi-theta** for the default rotations.  Modify the number of phi and theta camera locations as desired.  Click  **Next**.  On the next window, choose the number of frames (time steps) to include and click **Finish**.
+
+.. image:: images/visit_CinemaWizard1.png
+    :width: 48%
+    :align: left
+
+.. image:: images/visit_CinemaWizard2.png
+    :width: 48%
+
+Note:  The beta version currently adds an unnecessary column (max and min of the rendered variable) to the data.csv file.  The user will need to edit data.csv to delete this column.  (Issue is opened and fix is underway.)
 
 In Situ via VisIt LimSim
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -76,6 +104,7 @@ In Situ via ALPINE Ascent
 .. _cinema_explorer : https://github.com/cinemascience/cinema_explorer
 .. _CinemaScience Examples : https://cinemascience.github.io/examples.html
 .. _ParaView Python Documentation : https://kitware.github.io/paraview-docs/latest/python/quick-start.html
+.. _VisIt tutorial: https://wci.llnl.gov/simulation/computer-codes/visit/manuals
 
 .. toctree::
    :maxdepth: 2
