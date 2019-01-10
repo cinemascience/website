@@ -20,6 +20,7 @@ CinemaScience includes algorithms, code libraries, and tools to facilitate analy
 
 .. toctree::
    :maxdepth: 2
-   :caption: cinema_lib
+   :caption: Libraries
 
    cinema_lib
+   cinema_components

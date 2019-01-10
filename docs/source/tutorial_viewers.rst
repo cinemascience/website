@@ -13,6 +13,8 @@ Viewing Cinema Databases
 
 The basic Cinema viewers operate on the Cinema Spec D specification.  In each case, CDBs are assumed to reside in a **data/** directory.  Each CDB consists of a default **data.csv** file with columns of data abstracts following Spec D requirements (see :ref:`label_specifications`), and any subdirectories needed for the data abstracts such as images, vti files, or additional csv files.  The database viewers are described below.
 
+.. _label_tutorial_compare:
+
 CinemaCompare
 -------------
 
@@ -105,6 +107,8 @@ The sliders control all three databases in common:
    TypeError: results is undefined
 
 Note that videos showing CinemaCompare for single and multiple databases can be seen on the `CinemaScience Examples`_ website.
+
+.. _label_tutorial_explorer:
 
 CinemaExplorer
 --------------
@@ -272,6 +276,8 @@ There are three optional control fields that can be implemented within the **dat
 .. image:: images/selectionExample.png
     :width: 95%
     :align: left
+
+.. _label_tutorial_scope:
 
 CinemaScope
 -----------
