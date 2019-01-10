@@ -11,12 +11,12 @@ Viewing Cinema Databases
 ------------------------
 **Note: Cinema databases should be viewed in Firefox to avoid cross origin security errors.**
 
-The two basic Cinema viewers operate on the Cinema Spec D specification.  In each case, CDBs are assumed to reside in a **data/** directory.  Each CDB consists of a default **data.csv** file with columns of data abstracts following Spec D requirements, :ref:`label_specifications`, and any subdirectories needed for the data abstracts such as images or vti files or additional csv files.  The control of the database viewers is described below.
+The basic Cinema viewers operate on the Cinema Spec D specification.  In each case, CDBs are assumed to reside in a **data/** directory.  Each CDB consists of a default **data.csv** file with columns of data abstracts following Spec D requirements (see :ref:`label_specifications`), and any subdirectories needed for the data abstracts such as images, vti files, or additional csv files.  The database viewers are described below.
 
-Cinema:Compare
-^^^^^^^^^^^^^^
+CinemaCompare
+-------------
 
-Cinema:Compare is designed to access the images within one or more CDBs, providing sliders spanning the values in the databases in order to select a specific image or set of comparison images.   Cinema:Compare can be downloaded from the `cinema_compare`_ GitHub page.  This download will result in several directories and an **index.html**:
+CinemaCompare is designed to access the images within one or more CDBs, providing sliders spanning the values in the databases in order to select a specific image or set of comparison images.   CinemaCompare can be downloaded from the `cinema_compare`_ GitHub page.  This download will result in several directories and an **index.html**:
 
 .. code:: bash
 
@@ -76,7 +76,7 @@ Opening **index.html** in Firefox:
 
     $ open index.html -a Firefox
 
-will bring up the Cinema\:Compare viewer.  The sliders allow you to change the image size and the orientation.
+will bring up the CinemaCompare viewer.  The sliders allow you to change the image size and the orientation.
 
 .. image:: images/CinemaCompareSphere.png
     :width: 98%
@@ -104,12 +104,12 @@ The sliders control all three databases in common:
 
    TypeError: results is undefined
 
-Note that videos showing Cinema:Compare for single and multiple databases can be seen on the `CinemaScience Examples`_ website.
+Note that videos showing CinemaCompare for single and multiple databases can be seen on the `CinemaScience Examples`_ website.
 
-Cinema:Explorer
-^^^^^^^^^^^^^^^
+CinemaExplorer
+--------------
 
-Cinema\:Explorer is a parallel coordinates approach to selecting and viewing data in a Cinema database.  Cinema\:Explorer can be downloaded from the `cinema_explorer`_ GitHub page.  This download will result in several directories and an **cinema_explorer.html**:
+CinemaExplorer is a parallel coordinates approach to selecting and viewing data in a Cinema database.  CinemaExplorer can be downloaded from the `cinema_explorer`_ GitHub page.  This download will result in several directories and an **cinema_explorer.html**:
 
 .. code:: bash
 
@@ -119,7 +119,7 @@ Cinema\:Explorer is a parallel coordinates approach to selecting and viewing dat
       doc
       cinema_explorer.html
 
-The default **data/** directory contains subdirectories with example CDBs to illustrate the range of functionality of Cinema\:Explorer.  Again, each CDB consists of a **data.csv** file and any needed subdirectories for its data artifacts.  An **image/** directory is common and the **file_types.cdb** includes a **wavelet/** subdirectory with vti files that can be viewed with Cinema\:Explorer.
+The default **data/** directory contains subdirectories with example CDBs to illustrate the range of functionality of CinemaExplorer.  Again, each CDB consists of a **data.csv** file and any needed subdirectories for its data artifacts.  An **image/** directory is common and the **file_types.cdb** includes a **wavelet/** subdirectory with vti files that can be viewed with CinemaExplorer.
 
 .. code:: bash
 
@@ -138,7 +138,7 @@ The default **data/** directory contains subdirectories with example CDBs to ill
   sphere_multi-image.cdb/
   sphere... code-block::
 
-The set of databases for Cinema\:Explorer is defined in a **databases.json** file found in:
+The set of databases for CinemaExplorer is defined in a **databases.json** file found in:
 
 .. code:: bash
 
@@ -165,13 +165,13 @@ Opening the **cinema_explorer/cinema_explorer.html** file in Firefox
 
     $ open cinema_explorer.html -a Firefox
 
-will bring up Cinema\:Explorer in a browser window.  The default view has a parallel coordinates display of the **data.csv** columns.  Each column corresponds to an axis.
+will bring up CinemaExplorer in a browser window.  The default view has a parallel coordinates display of the **data.csv** columns.  Each column corresponds to an axis.
 
 .. image:: images/CinemaExplorerSphere.png
     :width: 98%
     :align: left
 
-By default, the first database listed in **databases.json** will load initially.  All databases in **databases.json** will appear in a dropdown menu under **Select Database:** in the Cinema:Explorer browser window.  After selecting a CDB, click on the **Load** button to switch to that CDB.
+By default, the first database listed in **databases.json** will load initially.  All databases in **databases.json** will appear in a dropdown menu under **Select Database:** in the CinemaExplorer browser window.  After selecting a CDB, click on the **Load** button to switch to that CDB.
 
 .. image:: images/SelectDatabaseDropdown.png
     :width: 45%
@@ -183,7 +183,7 @@ By default, the first database listed in **databases.json** will load initially.
     :scale: 90%
     :align: left
 
-Under the parallel coordinates, the default tab is the **Image Spread** component.  The image spread includes controls to change the image size, the results per page, and the sort variable and order.  Let's switch to the **Big Bogus 2** database.  It has several additional axes of (bogus) variables and more images than can fit in a single page.  Note that Cinema\:Explorer switches between Canvas and SVG versions to accommodate the size of the database.
+Under the parallel coordinates, the default tab is the **Image Spread** component.  The image spread includes controls to change the image size, the results per page, and the sort variable and order.  Let's switch to the **Big Bogus 2** database.  It has several additional axes of (bogus) variables and more images than can fit in a single page.  Note that CinemaExplorer switches between Canvas and SVG versions to accommodate the size of the database.
 
 .. image:: images/BigBogus2Overview.png
     :width: 98%
@@ -273,22 +273,69 @@ There are three optional control fields that can be implemented within the **dat
     :width: 95%
     :align: left
 
-Other Cinema Viewers and Components
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+CinemaScope
+-----------
 
-CinemaScience includes additional components that can be added by the user to create analysis and data specific viewers. These components include:
+CinemaScope is a prototype cross platform application viewer to interactively explore images in a Cinema database.  CinemaScope can be found on the `cinema_scope GitHub`_ page.  Under the readme, click on **buildpassing** to bring up the list of builds.  Currently, builds are available for Linux, Windows, MacOS, and MacOS/Xcode:
 
-- PcoordSVG
-- PcoordCanvas
-- Glyph
-- ImageSpread
-- Query
-- ScatterPlotSVG
-- ScatterPlotCanvas
+.. image:: images/cs_github_builds.png
+    :width: 95%
+    :align: left
 
-Details information on these components can be found on the `cinema_components GitHub`_ page.
+Download the relevant build and install.  Test databases are available in https://github.com/cinemascience/cinema_scope/tree/master/docs/data/test_cylinder.cdb.zip. CinemaScope looks for a settings file in:
 
-Additionally, there are other application-specific Cinema viewers that are useful examples and inspiration for Cinema users and developers.  We invite you to explore the `CinemaScience GitHub`_ for an up-to-date listing of example viewers.
+.. code:: bash
+
+  $HOME/.cinema/scope/settings.ini
+
+This INI-style settings file includes a pointer to the data directory.  Edit **settings.ini** to point to the location of the data directory:
+
+.. code:: bash
+
+    [cinemascope]
+    data=/<path-to-data>
+
+Open CinemaScope after it has installed.  Click on **File** -> **Open**  to open the data directory and select the data set by highlighting **test_cylinder.cdb** (do not click into the directory) and clicking **Open**.
+
+.. image:: images/cs_FileOpen.png
+    :width: 30%
+    :align: left
+
+.. image:: images/cs_DataDirectory.png
+    :width: 47%
+
+This will load the test_cylinder CDB.
+
+.. image:: images/cs_test_cylinder1.png
+    :width: 97%
+    :align: left
+
+The mouse wheel can be used to increase/decrease image size.  Each parameter in the CDB data.csv will correspond to a slider.  The sliders can be used to control the parameter values.  In this case, changing phi and theta rotate the cylinder.
+
+.. image:: images/cs_test_cylinder2.png
+    :width: 97%
+    :align: left
+
+Mouse drag can also be used to scroll through the images.  Up/down is linked by default to theta while left/right is linked to phi.  The linked parameters can be modified using the **Map Parameters Dialog**.  Click **Edit** --> **Edit Parameters** to open the dialog and select the parameters from each dropdown menu. For CDBs with multiple artifacts, the **Artifact** dropdown menu will allow you to access each set of images.
+
+.. image:: images/cs_MapParametersFILE.png
+    :width: 97%
+    :align: left
+
+An optional **csettings.json** file, which must be located in the \*.cdb directory, can be used to limit the number of parameters actually linked to a slider or reorder a list of parameter columns.  The colorder ("column order") variable contains the list of actively linked parameters.
+
+.. code:: json
+
+    csettings.json
+
+    {
+        "colorder" : ["phi", "theta", "xValue", "yValue", "zValue", "FILE", "FILE_2"]
+    }
+
+Other Cinema viewers
+^^^^^^^^^^^^^^^^^^^^
+
+Additionally, there are other application-specific Cinema viewers that provide useful examples and inspiration for Cinema users and developers.  We invite you to explore the `CinemaScience GitHub`_ for an up-to-date listing of example viewers.  Cinema Viewers, in particular CinemaScope, are in active development.  We invite users to join the Cinema community and contribute to the Cinema project.
 
 .. _CinemaScience GitHub : https://github.com/cinemascience
 .. _CinemaScience website : https://cinemascience.github.io
@@ -296,6 +343,7 @@ Additionally, there are other application-specific Cinema viewers that are usefu
 .. _cinema_explorer : https://github.com/cinemascience/cinema_explorer
 .. _CinemaScience Examples : https://cinemascience.github.io/examples.html
 .. _cinema_components GitHub : https://github.com/cinemascience/cinema_components
+.. _cinema_scope GitHub : https://github.com/cinemascience/cinema_scope
 
 .. toctree::
    :maxdepth: 2
