@@ -10,6 +10,7 @@ CinemaScience includes algorithms, code libraries, and tools to facilitate analy
 - `cvlib`_ A Cinema Viewer library which provides a JavaScript API to Spec A Cinema databases for visualization in the browser.
 - `cvlibd`_ A Javascript framework to facilitate development of viewer applications for Spec D Cinema databases in the browser.
 - `cinema_lib`_ Python 3.6 library and command line tool for Cinema specifications A and D.
+- `cinema_components`_ A javascript library containing prebuilt components for viewing and querying Cinema SpecD databases.
 
 .. _CinemaScience GitHub : https://github.com/cinemascience
 .. _cinema_change_detection :  https://github.com/cinemascience/cinema_change_detection
@@ -17,10 +18,12 @@ CinemaScience includes algorithms, code libraries, and tools to facilitate analy
 .. _cinema_asqlpy : https://github.com/cinemascience/cinema_asqlpy
 .. _cvlib : https://github.com/cinemascience/cvlib
 .. _cvlibd : https://github.com/cinemascience/cvlibd
+.. _cinema_components :  https://github.com/cinemascience/cinema_components
+
 
 .. toctree::
    :maxdepth: 2
-   :caption: Libraries
+   :caption: Libraries Documentation
 
    cinema_lib
    cinema_components
