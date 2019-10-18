@@ -9,7 +9,7 @@ Tutorial: Other Useful information
 Converting Spec A to Spec D databases
 -------------------------------------
 
-It is necessary at times to convert a Spec A to a Spec D Cinema database (CDB).  As of this writing, ParaView v5.6 exports Spec A CDBs (this will be updated to a Spec D export wizard in ParaView v5.7).  Or you may have an older CDB that needs to be updated.
+It is necessary at times to convert a Spec A to a Spec D Cinema database (CDB).  Spec A CDBs are available from ParaView v5.6 and earlier, from VisIt, from Ascent or you may have an older CDB that needs to be updated.
 
 The cinema_lib library can be used to upgrade a Spec A CDB.  Follow the instructions for downloading and installing from the `cinema_lib`_ Github page or see :ref:`label_cinema_lib`.  Included in that download is a **upgrade_cinema_database** script:
 

@@ -60,9 +60,7 @@ The `ParaView Python Documentation`_ is an excellent source of information on ho
 PostProcessing via VisIt Cinema Export Wizard
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A Cinema Export Wizard is an addition to the VisIt v3.0 release, currently in beta release.  This tutorial is based on the beta release and will be updated when VisIt v3.0 is officially released.
-
-A Cinema database can be exported directly from VisIt. This can be demonstrated with sample data that can be downloaded from the `VisIt tutorial`_ page.  Start by clicking on **Open** to bring up the VisIt **File open** dialog box.  Navigate to the correct directory, select the data you wish to visualize and click **OK**:
+A Cinema Export Wizard is available in VisIt v3.0.2 to directly export a Cinema database from VisIt. This can be demonstrated with sample data that can be downloaded from the `VisIt tutorial`_ page.  Start by clicking on **Open** to bring up the VisIt **File open** dialog box.  Navigate to the correct directory, select the data you wish to visualize and click **OK**:
 
 .. image:: images/visit_openDataFiles.png
     :width: 98%
@@ -82,21 +80,23 @@ On the control bar, click **File** --> **Save To Cinema** to bring up the VisIt 
 In the Cinema wizard, change the database name and path as needed, select Spec D for the current Cinema specification and choose **Use screen capture** to select the entire VisIt viewing window.  The **Camera type** can be either **static** (no rotation, only time evolution of the currently rendered view) or **phi-theta** for the default rotations.  Modify the number of phi and theta camera locations as desired.  Click  **Next**.  On the next window, choose the number of frames (time steps) to include and click **Finish**.
 
 .. image:: images/visit_CinemaWizard1.png
-    :width: 48%
+    :width: 80%
     :align: left
 
 .. image:: images/visit_CinemaWizard2.png
-    :width: 48%
+    :width: 80%
 
-Note:  The beta version currently adds an unnecessary column (max and min of the rendered variable) to the data.csv file.  The user will need to edit data.csv to delete this column.  (Issue is opened and fix is underway.)
+VisIt may request permission to access a terminal window which provides verbose output on CDB export progress.
 
 In Situ via VisIt LimSim
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
+Not currently available.
 
 In Situ via ALPINE Ascent
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Ascent is a many-core capable lightweight in-situ visualization and analysis infrastructure for multi-physics HPC simulations.  Ascent is under development as part of the Exascale Computing Project's ALPINE project.  For simulation codes instrumented with the `ALPINE Ascent`_ infrastructure, Cinema databases can be exported as one of the available **scenes**.  Currently Ascent only outputs Spec A (the deprecated json-based specification).  Spec A can be converted to Spec D databases (see :ref:`label_convert_a2d`). There are plans to update this to Spec D.
 
 .. _CinemaScience GitHub : https://github.com/cinemascience
 .. _CinemaScience website : https://cinemascience.github.io
@@ -105,6 +105,7 @@ In Situ via ALPINE Ascent
 .. _CinemaScience Examples : https://cinemascience.github.io/examples.html
 .. _ParaView Python Documentation : https://kitware.github.io/paraview-docs/latest/python/quick-start.html
 .. _VisIt tutorial: https://wci.llnl.gov/simulation/computer-codes/visit/manuals
+.. _ALPINE Ascent: https://alpine-dav.github.io/ascent/
 
 .. toctree::
    :maxdepth: 2

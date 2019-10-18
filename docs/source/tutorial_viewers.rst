@@ -330,9 +330,7 @@ Mouse drag can also be used to scroll through the images.  Up/down is linked by 
 
 An optional **csettings.json** file, which must be located in the \*.cdb directory, can be used to limit the number of parameters actually linked to a slider or reorder a list of parameter columns.  The colorder ("column order") variable contains the list of actively linked parameters.
 
-.. code:: json
-
-    csettings.json
+.. code-block:: JSON
 
     {
         "colorder" : ["phi", "theta", "xValue", "yValue", "zValue", "FILE", "FILE_2"]
