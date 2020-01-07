@@ -27,3 +27,4 @@ CinemaScience includes algorithms, code libraries, and tools to facilitate analy
 
    cinema_lib
    cinema_components
+   cinema_movie
