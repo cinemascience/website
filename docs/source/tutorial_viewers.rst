@@ -15,8 +15,8 @@ The basic Cinema viewers operate on the Cinema Spec D specification.  In each ca
 
 .. _label_tutorial_compare:
 
-CinemaCompare
--------------
+Cinema:Compare
+--------------
 
 CinemaCompare is designed to access the images within one or more CDBs, providing sliders spanning the values in the databases in order to select a specific image or set of comparison images.   CinemaCompare can be downloaded from the `cinema_compare`_ GitHub page.  This download will result in several directories and an **index.html**:
 
@@ -110,8 +110,8 @@ Note that videos showing CinemaCompare for single and multiple databases can be 
 
 .. _label_tutorial_explorer:
 
-CinemaExplorer
---------------
+Cinema:Explorer
+---------------
 
 CinemaExplorer is a parallel coordinates approach to selecting and viewing data in a Cinema database.  CinemaExplorer can be downloaded from the `cinema_explorer`_ GitHub page.  This download will result in several directories and an **cinema_explorer.html**:
 
@@ -279,8 +279,8 @@ There are three optional control fields that can be implemented within the **dat
 
 .. _label_tutorial_scope:
 
-CinemaScope
------------
+Cinema:Scope
+------------
 
 CinemaScope is a prototype cross platform application viewer to interactively explore images in a Cinema database.  CinemaScope can be found on the `cinema_scope GitHub`_ page.  Under the readme, click on **buildpassing** to bring up the list of builds.  Currently, builds are available for Linux, Windows, MacOS, and MacOS/Xcode:
 

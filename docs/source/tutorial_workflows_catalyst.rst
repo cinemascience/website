@@ -5,7 +5,7 @@ In Situ via ParaView Catalyst
 
 ParaView's in situ Catalyst library can be used to output Cinema Spec D databases.  Within ParaView, load the data and create the visualization you wish to generate in situ.
 
-If the **Export Inspector** view is not already opened, it can be opened from either the **View** menu by selecting **Export Inspector* or from the **Catalyst** menu by selecting **Define Exports**.  Set up the Cinema database export as described in the post-processing Cinema ParaView workflow, :ref:`label_workflow_pv57:
+If the **Export Inspector** view is not already opened, it can be opened from either the **View** menu by selecting **Export Inspector* or from the **Catalyst** menu by selecting **Define Exports**.  Set up the Cinema database export as described in the post-processing Cinema ParaView workflow, :ref:`label_workflow_pv57`
 
 - Under **Image Extracts**, make sure the correct view is selected.
 - Select **Cinema image database (*.cdb)** and click the checkbox to the right to establish that option.

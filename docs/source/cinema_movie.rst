@@ -3,7 +3,7 @@
 cinema_movie Tool
 =================
 
-*cinema_movie* is a tool to create a movie from a Cinema database (CDB).
+*cinema_movie* is a tool to create a movie from a Cinema database (CDB).  This is a new functionality currently under development.  Updates on this documentation page may not completely reflect current capabilities.  For the latest information on **cinema_movie**, please check out the README the `cinema_movie GitHub`_ page.
 
 Requirements
 ------------
@@ -11,7 +11,7 @@ Requirements
 Minimum Requirements are:
 
 - Python 3.7
-- pyyaml, pandas, numpy, opencv-python
+- pandas, numpy, opencv-python
 
 
 Files
@@ -19,59 +19,42 @@ Files
 
 .. code::
 
-  simple_movie - main program
-  movie.yaml - control file
+  cinema_movie - main program
   cmovie - movie production module
 
-The **simple_movie** script takes in a Cinema database (CDB) and creates a movie based on the primary frame variable within the CDB.  Control is through a human-readable YAML configuration file.  Cinema_movie can be used to create a movie over time for a single static view as defined in the movie.yaml file.  The cmovie module contains the functions needed to create the movie.
+The **cinema_movie** script takes in a Cinema database (CDB) and creates a movie based on the set of frames described in the **frames.csv** control file.   The cmovie module contains the functions needed to create the movie.
 
-Control Parameters: movie.yaml
-------------------------------
+Command Line Control Parameters
+-------------------------------
 
-The yaml control file is used to point to the database and define the parameters to make the movie.
-
-
-Path and database information
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+A series of command line arguments can be used to modify the functionality of **cinema_movie**:
 
 .. code::
 
-  cdb_path : ./data/
-  cdb_name : example_data.cdb
-
-Output movie information
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code::
-
-  frame_rate : 5.0         # number of frames per second
-  movie_name : cinema.mp4  # name of output movie
-
-
-Variables to define images and static view used in the movie
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code::
-
-  frame_var   : time        # primary control variable along which movie is made; typically time
-  FILE_choice : FILE        # which FILE* column of images to use in making movie
-  views :
-    phi   : -90
-    theta : 0
+  cdb:    Set input path and Cinema database name (default: ./data/example_data.cdb)
+  frames: Set input csv file name to choose views in the movie; assumes path is cdb (default: ./data/example_data.cdb/frames.csv)
+  FILE:   Set the image column used from the CDB (default: FILE)
+  fps:    Set the frame rate for the movie (default: 5 fps)
+  opath:  Set/creates path to output movie (default: ./)
+  movie:  Set output movie name (default: cinema.mp4)
 
 There are error checks on the path and database name and to verify the database columns that will be used in the movie.  If there are no images found that satisfy the requested movie parameters, a warning message will print.
 
 Usage
 -----
 
-Edit the movie.yaml file to point to the CDB, adjust the name of the output movie, choose movie frame rate and the variable along which to make the movie.  Edit the views variable to define the single static view that will be used.  Edit the FILE variable if using a different FILE column of images.
-
-Make a movie by running the script:
+Make a movie by running the script with any modified arguments.  Examples of usage
 
 .. code::
 
-  $ ./simple_movie
+  $ ./cinema_movie
+  $ ./cinema_movie --cdb ./tmp/my_cdb.cdb --fps 10 --movie mymovie.mp4
 
+
+
+.. _CinemaScience GitHub : https://github.com/cinemascience
+.. _CinemaScience website : https://cinemascience.github.io
+.. _cinema_movie GitHub: https://github.com/cinemascience/cinema_movie
 
 
 .. toctree::

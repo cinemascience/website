@@ -38,10 +38,12 @@ This example shows the header row and first few rows of the **data.csv** file fo
 
 The file structure for the images is thus arranged by time step then phi then theta and finally has the images for each of the five density isosurfaces:
 
-.. image:: images/NyxFileSystemExplorer.png
+.. figure:: images/NyxFileSystemExplorer.png
    :width: 97%
    :alt: Spec D file system
    :align: left
+
+   An example of the file system organization for a large Cinema image database (from left to right): top .cdb directory, time steps, phi, theta and isosurfaces.
 
 The Cinema\:Compare and Cinema\:Explorer viewers are the basic viewers used with Cinema databases, :ref:`label_viewers`:.  The viewers are based on Spec D and provide the user with different approaches to viewing and exploring the data.  The user is free to develop other viewers and analysis approaches specific to their data.  The `CinemaScience Github`_ contains several repositories to support users in developing their own Cinema viewers.  An example using the Cinema\:Explorer viewer is shown in :ref:`label_cinema_explorer`.
 
