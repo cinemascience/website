@@ -9,7 +9,7 @@ Not currently available.
 
 .. _CinemaScience GitHub : https://github.com/cinemascience
 .. _CinemaScience website : https://cinemascience.github.io
-.. _cinema_compare : https://github.com/cinemascience/cinema_compare
+.. _cinema_view : https://github.com/cinemascience/cinema_view
 .. _cinema_explorer : https://github.com/cinemascience/cinema_explorer
 .. _CinemaScience Examples : https://cinemascience.github.io/examples.html
 .. _ParaView Python Documentation : https://kitware.github.io/paraview-docs/latest/python/quick-start.html

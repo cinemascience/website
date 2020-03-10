@@ -111,7 +111,7 @@ Image Color Conversion and Statistics
 
     $ cinema -d path_to_database/database_name.cdb  --image-grey 2
 
-Using :ref:`label_cinema_compare`, one can see that the original Viridis colormap has been converted to greyscale:
+Using :ref:`label_cinema_view`, one can see that the original Viridis colormap has been converted to greyscale:
 
 .. image:: images/mpas_static_Viridis_Grey.png
    :width: 97%
@@ -235,7 +235,7 @@ First use a *cinema_lib* function to convert the Viridis colormap to greyscale a
     $ cinema -d mpas_static.cdb --cv-grey 1
     $ cinema -d mpas_static.cdb --cv-fast-draw 2 --label FAST
 
-Once again, using :ref:`label_cinema_compare`, one can see the original Viridis colormap, its greyscale counterpart, and the FAST features added from the Computer Vision suite of functionality.  The FAST algorithm finds the eddies, land masses, and ocean currents:
+Once again, using :ref:`label_cinema_view`, one can see the original Viridis colormap, its greyscale counterpart, and the FAST features added from the Computer Vision suite of functionality.  The FAST algorithm finds the eddies, land masses, and ocean currents:
 
 .. image:: images/mpas_static_Viridis_Grey_Fast.png
    :width: 97%

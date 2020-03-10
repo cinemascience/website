@@ -23,6 +23,28 @@ Simply run the **upgrade_cinema_database** script giving the path to your Spec A
 
     $ upgrade_cinema_database /path_to_database/database_name.cdb
 
+
+.. _label_browser_security:
+
+A Note on Browser Security
+--------------------------
+
+To use the browser-based viewers, you **MUST** allow local file access. Do this in the following way, but be sure to reset these options when you are done as this allows loading of a file from any folder.
+
+- **Firefox (preferred)**
+    - In the brower search bar, enter ``about:config``
+    - Set ``privacy.file_unique_origin`` to **false**
+    - Set ``security.fileuri.strict_origin_policy`` to **false**
+
+- **Safari**
+    - Safari->Preferences->Advanced->Show Develop menu in menu bar
+    - Safari->Develop->Disable Local File Restrictions (on)
+
+- **Chrome**
+    - open **chrome** with the option ``--disable-web-security``
+    - Mac example:
+        ``open -na "Google Chrome" cinema_view.html --args --user-data-dir="<path/to/repo>" --disable-web-security``
+
 The `CinemaScience GitHub`_ page and the `CinemaScience website`_ are useful sources for more information and ideas.
 
 .. _CinemaScience GitHub : https://github.com/cinemascience

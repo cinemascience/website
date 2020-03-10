@@ -5,45 +5,54 @@ CinemaScience Viewers
 
 CinemaScience provides reference viewers and flexible components for users to build application specific viewers.  The basic viewers are introduced here.  A full viewer tutorial is available at  :ref:`label_tutorial_viewers`.
 
-.. _label_cinema_compare:
+.. _label_cinema_view:
 
-Cinema:Compare
+Cinema:View
 --------------
 
-**Cinema:Compare** is an interactive visualization approach to exploring Cinema databases.  It can be used with single databases to rotate around a visualization as with the MPAS-Ocean simulation shown in :numref: 'Figure %s <fig_CompareSingle>'.
+.. note::
 
-.. _fig_CompareSingle:
+  Cinema:View is the new version of Cinema:Compare -- a now deprecated viewer.
 
-.. figure:: images/CinemaCompareMPAS.png
+.. note::
+
+  To use browser based viewers, you need to allow local file access.  See :ref:`label_browser_security` for more information.
+
+**Cinema:View** is an interactive visualization approach to exploring Cinema databases.  It can be used with single databases to rotate around a visualization as with the MPAS-Ocean simulation shown in :numref:`fig_ViewSingle`.
+
+.. figure:: images/CinemaViewMPAS.png
+   :name: fig_ViewSingle
    :width: 97%
    :alt: MPAS image
    :align: left
 
-   An example using **Cinema:Compare** to view a single Cinema database.  This MPAS-Ocean database can be explored via sliders that range across the available parameter values.  The choice of database(s) can be changed by selecting from a drop-down menu (above sliders) defined by a JSON file.
+   An example using **Cinema:View** to view a single Cinema database.  This MPAS-Ocean database can be explored via sliders that range across the available parameter values.  The choice of database(s) can be changed by selecting from a drop-down menu (above sliders) defined by a JSON file.
 
-**Cinema:Compare** can also be used to compare multiple databases as with the Warp plasma accelerator visualization, :numref: 'Figure %s <fig_CompareMultiple>' that compares different approaches to finding isocontours in the simulation.
+**Cinema:View** can also be used to compare multiple databases as with the Warp plasma accelerator visualization,
+:numref:`fig_ViewMultiple` that compares different approaches to finding isocontours in the simulation.
 
-.. _fig_CompareMultiple:
-
-.. figure:: images/CinemaCompareWarp.png
+.. figure:: images/CinemaViewWarp.png
+   :name: fig_ViewMultiple
    :width: 97%
    :alt: Warp image
    :align: left
 
    A comparison of two Warp plasma accelerator simulations.  In the one on the left, a data-driven topological analysis selects important isocontours.  On the right, regularly space isocontours are used.  The time/phi/theta sliders can be used to explore the differences spatially and temporally.
 
-The list of databases available in the viewer is controlled via a databases.json file in the cinema_compare/data directory.  The sets of single or multiple databases are defined in the databases.json file and appear as a list in the dropdown menu above the control sliders.  Titles can also be specified for the each Cinema database in the comparison view.  Cinema:Compare can be found at `cinema_compare`_ and its tutorial is at  :ref:`label_tutorial_compare`.
+The list of databases available in the viewer is controlled via a databases.json file in the cinema_view/data/ directory.  The sets of single or multiple databases are defined in the databases.json file and appear as a list in the dropdown menu above the control sliders.  Titles can also be specified for the each Cinema database in the comparison view.  Cinema:View can be found at `cinema_view`_ and its tutorial is at  :ref:`label_tutorial_view`.
+
+
+
 
 .. _label_cinema_explorer:
 
 Cinema:Explorer
 ---------------
 
-**Cinema:Explorer** is a browser based viewer for Spec D databases.  It includes a parallel coordinates plot and a scatterplot view. The columns are the data artifacts or derived quantities that are defined in the data.csv file for the Spec D database.  :numref: 'Figure %s <fig_NyxExplorer>' shows the baryon density from a Nyx cosmological simulation.  Note how one can choose a subset of the images to view by selecting a region along one of the variable axes.  The parallel coordinates view supports linking and brushing allowing the user to query a subset of the data and view the resultant set of images.
-
-.. _fig_NyxExplorer:
+**Cinema:Explorer** is a browser based viewer for Spec D databases.  It includes a parallel coordinates plot and a scatterplot view. The columns are the data artifacts or derived quantities that are defined in the data.csv file for the Spec D database.  :numref:`fig_nyxExplorer` shows the baryon density from a Nyx cosmological simulation.  Note how one can choose a subset of the images to view by selecting a region along one of the variable axes.  The parallel coordinates view supports linking and brushing allowing the user to query a subset of the data and view the resultant set of images.
 
 .. figure:: images/NyxExplorer.png
+    :name: fig_nyxExplorer
     :width: 97%
     :alt: Cinema Explorer Example
     :align: left
@@ -58,11 +67,10 @@ Cinema:Explorer
 Cinema:Scope
 ------------
 
-**Cinema:Scope** is a prototype cross-platform viewer application that allows the user to interactively explore a Cinema database of images, through both sliders and mouse controls.  Cinema:Scope is compatible with the CSV specification of Cinema databases.  In :numref: 'Figure %s <fig_Scope>', a Sedov blast wave is viewed with **Cinema:Scope**.  The parameters linked to the mouse controls can be changed by the user.  For databases with multiple artifacts, the image artifact can be changed by the user to change the view to a different set of images.
-
-.. _fig_Scope:
+**Cinema:Scope** is a prototype cross-platform viewer application that allows the user to interactively explore a Cinema database of images, through both sliders and mouse controls.  Cinema:Scope is compatible with the CSV specification of Cinema databases.  In :numref:`fig_scope`, a Sedov blast wave is viewed with **Cinema:Scope**.  The parameters linked to the mouse controls can be changed by the user.  For databases with multiple artifacts, the image artifact can be changed by the user to change the view to a different set of images.
 
 .. figure:: images/cs_sedov.png
+    :name: fig_scope
     :width: 97%
     :alt: Cinema Scope Example
     :align: left
@@ -90,7 +98,7 @@ The Cinema viewer projects include:
 - `cinema_jnc`_ A prototype Jupyter notebook-based viewer.
 
 
-.. _cinema_compare : https://github.com/cinemascience/cinema_compare
+.. _cinema_view : https://github.com/cinemascience/cinema_view
 .. _cinema_explorer : https://github.com/cinemascience/cinema_explorer
 .. _cinema_scope : https://github.com/cinemascience/cinema_scope
 .. _CinemaScience GitHub : https://github.com/cinemascience
