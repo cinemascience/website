@@ -23,6 +23,7 @@ The `CinemaScience GitHub`_ page and the `CinemaScience website`_ are useful sou
    :maxdepth: 2
 
    tutorial_workflows_script
+   tutorial_workflows_PV59
    tutorial_workflows_PV57
    tutorial_workflows_PV56
    tutorial_workflows_catalyst
