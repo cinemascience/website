@@ -4,14 +4,14 @@
 Post-Processing via VisIt Cinema Export Wizard
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A Cinema Export Wizard is available in VisIt v3.0.2 to directly export a Cinema database from VisIt. This can be demonstrated with sample data that can be downloaded from the `VisIt tutorial`_ page.  Start by clicking on **Open** to bring up the VisIt **File open** dialog box.  Navigate to the correct directory, select the data you wish to visualize and click **OK**:
+A Cinema Export Wizard is available in VisIt v3.0.2 to directly export a Cinema database from VisIt. This can be demonstrated with sample data that can be downloaded from the `VisIt tutorial`_ page.  Start by clicking on ``Open`` to bring up the VisIt ``File open`` dialog box.  Navigate to the correct directory, select the data you wish to visualize and click ``OK``:
 
 .. image:: images/visit_openDataFiles.png
     :width: 98%
     :align: left
 
-Click **Add**, select **Pseudocolor** and choose an appropriate variable such as **pressure**.
-On the control bar, click **File** --> **Save To Cinema** to bring up the VisIt Cinema database dialog:
+Click ``Add``, select ``Pseudocolor`` and choose an appropriate variable such as ``pressure``.
+On the control bar, click ``File`` --> ``Save To Cinema`` to bring up the VisIt Cinema database dialog:
 
 .. image:: images/visit_pseudocolorPressure.png
     :width: 48%
@@ -21,7 +21,7 @@ On the control bar, click **File** --> **Save To Cinema** to bring up the VisIt 
     :width: 48%
 
 
-In the Cinema wizard, change the database name and path as needed, select Spec D for the current Cinema specification and choose **Use screen capture** to select the entire VisIt viewing window.  The **Camera type** can be either **static** (no rotation, only time evolution of the currently rendered view) or **phi-theta** for the default rotations.  Modify the number of phi and theta camera locations as desired.  Click  **Next**.  On the next window, choose the number of frames (time steps) to include and click **Finish**.
+In the Cinema wizard, change the database name and path as needed, select Spec D for the current Cinema specification and choose ``Use screen capture`` to select the entire VisIt viewing window.  The ``Camera type`` can be either ``static`` (no rotation, only time evolution of the currently rendered view) or ``phi-theta`` for the default rotations.  Modify the number of phi and theta camera locations as desired.  Click  ``Next``.  On the next window, choose the number of frames (time steps) to include and click ``Finish``.
 
 .. image:: images/visit_CinemaWizard1.png
     :width: 80%

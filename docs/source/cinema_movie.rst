@@ -3,15 +3,15 @@
 cinema_movie Tool
 =================
 
-*cinema_movie* is a tool to create a movie from a Cinema database (CDB).  This is a new functionality currently under development.  Updates on this documentation page may not completely reflect current capabilities.  For the latest information on **cinema_movie**, please check out the README the `cinema_movie GitHub`_ page.
+*cinema_movie* is a tool to create a movie from a Cinema database (CDB).  This is a new functionality currently under development.  Updates on this documentation page may not completely reflect current capabilities.  For the latest information on ``cinema_movie``, please check out the README the `cinema_movie GitHub`_ page.
 
 Requirements
 ------------
 
 Minimum Requirements are:
 
-- Python 3.7
-- pandas, numpy, opencv-python
+- ``Python 3.7``
+- ``pandas``, ``numpy``, ``opencv-python``
 
 
 Files
@@ -22,12 +22,12 @@ Files
   cinema_movie - main program
   cmovie - movie production module
 
-The **cinema_movie** script takes in a Cinema database (CDB) and creates a movie based on the set of frames described in the **frames.csv** control file.   The cmovie module contains the functions needed to create the movie.
+The ``cinema_movie`` script takes in a Cinema database (CDB) and creates a movie based on the set of frames described in the ``frames.csv`` control file.   The cmovie module contains the functions needed to create the movie.
 
 Command Line Control Parameters
 -------------------------------
 
-A series of command line arguments can be used to modify the functionality of **cinema_movie**:
+A series of command line arguments can be used to modify the functionality of ``cinema_movie``:
 
 .. code::
 

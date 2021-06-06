@@ -18,7 +18,7 @@ Cinema:View
 
   To use browser based viewers, you need to allow local file access.  See :ref:`label_browser_security` for more information.
 
-**Cinema:View** is an interactive visualization approach to exploring Cinema databases.  It can be used with single databases to rotate around a visualization as with the MPAS-Ocean simulation shown in :numref:`fig_ViewSingle`.
+``Cinema:View`` is an interactive visualization approach to exploring Cinema databases.  It can be used with single databases to rotate around a visualization as with the MPAS-Ocean simulation shown in :numref:`fig_ViewSingle`.
 
 .. figure:: images/CinemaViewMPAS.png
    :name: fig_ViewSingle
@@ -26,9 +26,9 @@ Cinema:View
    :alt: MPAS image
    :align: left
 
-   An example using **Cinema:View** to view a single Cinema database.  This MPAS-Ocean database can be explored via sliders that range across the available parameter values.  The choice of database(s) can be changed by selecting from a drop-down menu (above sliders) defined by a JSON file.
+   An example using ``Cinema:View`` to view a single Cinema database.  This MPAS-Ocean database can be explored via sliders that range across the available parameter values.  The choice of database(s) can be changed by selecting from a drop-down menu (above sliders) defined by a JSON file.
 
-**Cinema:View** can also be used to compare multiple databases as with the Warp plasma accelerator visualization,
+``Cinema:View`` can also be used to compare multiple databases as with the Warp plasma accelerator visualization,
 :numref:`fig_ViewMultiple` that compares different approaches to finding isocontours in the simulation.
 
 .. figure:: images/CinemaViewWarp.png
@@ -49,7 +49,7 @@ The list of databases available in the viewer is controlled via a databases.json
 Cinema:Explorer
 ---------------
 
-**Cinema:Explorer** is a browser based viewer for Spec D databases.  It includes a parallel coordinates plot and a scatterplot view. The columns are the data artifacts or derived quantities that are defined in the data.csv file for the Spec D database.  :numref:`fig_nyxExplorer` shows the baryon density from a Nyx cosmological simulation.  Note how one can choose a subset of the images to view by selecting a region along one of the variable axes.  The parallel coordinates view supports linking and brushing allowing the user to query a subset of the data and view the resultant set of images.
+``Cinema:Explorer`` is a browser based viewer for Spec D databases.  It includes a parallel coordinates plot and a scatterplot view. The columns are the data artifacts or derived quantities that are defined in the data.csv file for the Spec D database.  :numref:`fig_nyxExplorer` shows the baryon density from a Nyx cosmological simulation.  Note how one can choose a subset of the images to view by selecting a region along one of the variable axes.  The parallel coordinates view supports linking and brushing allowing the user to query a subset of the data and view the resultant set of images.
 
 .. figure:: images/NyxExplorer.png
     :name: fig_nyxExplorer
@@ -57,17 +57,17 @@ Cinema:Explorer
     :alt: Cinema Explorer Example
     :align: left
 
-    A large Nyx cosmological simulation is viewed within **Cinema:Explorer**.  The database has had a series of computer vision algorithms applied to extend the database (see :ref:`label_cinema_lib`).
+    A large Nyx cosmological simulation is viewed within ``Cinema:Explorer``.  The database has had a series of computer vision algorithms applied to extend the database (see :ref:`label_cinema_lib`).
 
 
-**Cinema:Explorer** uses a similar databases.json approach to define a list of available databases which can be explored.  databases.json is located within the cinema_explorer/cinema/explorer/1.9 directory.  **Cinema:Explorer** can be found at `cinema_explorer`_ and its tutorial is at  :ref:`label_tutorial_explorer`.
+``Cinema:Explorer`` uses a similar databases.json approach to define a list of available databases which can be explored.  databases.json is located within the cinema_explorer/cinema/explorer/1.9 directory.  ``Cinema:Explorer`` can be found at `cinema_explorer`_ and its tutorial is at  :ref:`label_tutorial_explorer`.
 
 .. _label_cinema_scope:
 
 Cinema:Scope
 ------------
 
-**Cinema:Scope** is a prototype cross-platform viewer application that allows the user to interactively explore a Cinema database of images, through both sliders and mouse controls.  Cinema:Scope is compatible with the CSV specification of Cinema databases.  In :numref:`fig_scope`, a Sedov blast wave is viewed with **Cinema:Scope**.  The parameters linked to the mouse controls can be changed by the user.  For databases with multiple artifacts, the image artifact can be changed by the user to change the view to a different set of images.
+``Cinema:Scope`` is a prototype cross-platform viewer application that allows the user to interactively explore a Cinema database of images, through both sliders and mouse controls.  Cinema:Scope is compatible with the CSV specification of Cinema databases.  In :numref:`fig_scope`, a Sedov blast wave is viewed with ``Cinema:Scope``.  The parameters linked to the mouse controls can be changed by the user.  For databases with multiple artifacts, the image artifact can be changed by the user to change the view to a different set of images.
 
 .. figure:: images/cs_sedov.png
     :name: fig_scope
@@ -75,7 +75,7 @@ Cinema:Scope
     :alt: Cinema Scope Example
     :align: left
 
-    A Sedov blast wave is viewed within **Cinema:Scope**.  The database can be explored either through slider control or through intuitive mouse controls.
+    A Sedov blast wave is viewed within ``Cinema:Scope``.  The database can be explored either through slider control or through intuitive mouse controls.
 
 CinemaScope can be found at `cinema_scope`_ and its tutorial is at  :ref:`label_tutorial_scope`.
 

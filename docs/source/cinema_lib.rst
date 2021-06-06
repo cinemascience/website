@@ -10,19 +10,19 @@ Requirements
 
 Minimum Requirements are:
 
-- Python 3.6
+- ``Python 3.6``
 
 Optional requirements are:
 
-- numpy >=1.13
+- ``numpy`` >=1.13
   - image capabilities
   - OpenCV capabilities
 
-- scikit-image >=0.13.1 (newer versions may cause regression tests to fail
+- ``scikit-image`` >=0.13.1 (newer versions may cause regression tests to fail
   due to changing numerics and implementations of algorithms)
   - image capabilities
 
-- opencv-python >=3.4 (newer versions may cause regression tests to fail
+- ``opencv-python`` >=3.4 (newer versions may cause regression tests to fail
   due to changing numerics)
   - OpenCV capabilities
 
@@ -37,7 +37,7 @@ To run the command line tool directly from the repository, first clone from the 
   $ cd cinema_lib
   $ ./cinema
 
-Or install with **pip**:
+Or install with ``pip``:
 
 .. code:: bash
 
@@ -96,7 +96,7 @@ Examples: Database Manipulation
 
     $ cinema -itvq -d path_to_database/database_name.cdb
 
-- Validate a Spec A and then convert it to a Spec D database (this will result in the generation of the required **data.csv** file):
+- Validate a Spec A and then convert it to a Spec D database (this will result in the generation of the required ``data.csv`` file):
 
 .. code:: bash
 
@@ -161,13 +161,13 @@ and do a quick validation to verify the new image FILE column:
   1: FILE
   2: FILEimage greyscale
 
-Choose the new **FILEimage greyscale** image column and calculate the mean image data:
+Choose the new ``FILEimage greyscale`` image column and calculate the mean image data:
 
 .. code:: bash
 
     $ cinema -d mpas_static.cdb --image-mean 2
 
-Note that each image action may result in one or more columns of output data being added to the **data.csv** file so validation is a useful step to keep in mind.
+Note that each image action may result in one or more columns of output data being added to the ``data.csv`` file so validation is a useful step to keep in mind.
 
 The full list of image operations is:
 

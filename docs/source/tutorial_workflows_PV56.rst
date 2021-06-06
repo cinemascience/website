@@ -5,13 +5,13 @@ Post-Processing via ParaView 5.6 Cinema Export Scene
 
 The current ParaView release v5.6 (in Release Candidate status as of this writing) has a Cinema Export Wizard that outputs Cinema Spec A databases.  These can be converted to Cinema Spec D databases through the cinema_lib command line interface.  The Cinema Spec D export wizard will be included in an upcoming ParaView release.  This tutorial will be updated when that change takes place.  The basic functionality will be similar to the following.
 
-A Cinema database can be exported directly from ParaView.  This can be demonstrated with a wavelet source.  Open ParaView, select **Sources** -> **Data Objects** --> **Wavelet**.  Click on **Apply** to load a basic wavelet.
+A Cinema database can be exported directly from ParaView.  This can be demonstrated with a wavelet source.  Open ParaView, select ``Sources`` -> ``Data Objects`` --> ``Wavelet``.  Click on ``Apply`` to load a basic wavelet.
 
 .. image:: images/PV56waveletSource.png
     :width: 97%
     :align: left
 
-Select **RTData** as the variable of interest and choose a **Volume** representation (answer Yes when it asks if you want to change the representation type):
+Select ``RTData`` as the variable of interest and choose a ``Volume`` representation (answer Yes when it asks if you want to change the representation type):
 
 .. image:: images/PV56RTData.png
     :width: 97%

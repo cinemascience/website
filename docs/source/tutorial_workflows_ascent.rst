@@ -3,7 +3,7 @@
 In Situ via ALPINE Ascent
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Ascent is a many-core capable lightweight in-situ visualization and analysis infrastructure for multi-physics HPC simulations.  Ascent is under development as part of the Exascale Computing Project's ALPINE project.  For simulation codes instrumented with the `ALPINE Ascent`_ infrastructure, Cinema databases can be exported as one of the available **scenes**.  Currently Ascent only outputs Spec A (the deprecated json-based specification).  Spec A can be converted to Spec D databases (see :ref:`label_convert_a2d`). There are plans to update this to Spec D.
+Ascent is a many-core capable lightweight in-situ visualization and analysis infrastructure for multi-physics HPC simulations.  Ascent is under development as part of the Exascale Computing Project's ALPINE project.  For simulation codes instrumented with the `ALPINE Ascent`_ infrastructure, Cinema databases can be exported as one of the available ``scenes``.  Currently Ascent only outputs Spec A (the deprecated json-based specification).  Spec A can be converted to Spec D databases (see :ref:`label_convert_a2d`). There are plans to update this to Spec D.
 
 
 .. _CinemaScience GitHub : https://github.com/cinemascience

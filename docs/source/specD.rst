@@ -1,13 +1,13 @@
 .. _label_specD:
 
-Spec D: Dietrich specification
-==============================
+Spec D specification
+====================
 
 The early Cinema specifications focussed on an image-based approach.  The philosophy of Spec D embraces a wide range of data abstracts to leverage and promote data analysis in addition to visualization.  This is a brief overview of the Spec D specifications and we encourage the reader to consult the full document: `Dietrich (Spec D)`_.
 
-Spec D is based on a Comma Separated Values (CSV) database file.  A Cinema database is a directory with a name of the form *database_name.cdb* that contains a **data.csv** file:
+Spec D is based on a Comma Separated Values (CSV) database file.  A Cinema database is a directory with a name of the form *database_name.cdb* that contains a ``data.csv`` file:
 
-The *database_name.cdb* directory may optionally contain other data files references by **data.csv** or may contain optional directories.  An **image/** directory is a common subdirectory to contain rendered images.
+The *database_name.cdb* directory may optionally contain other data files references by ``data.csv`` or may contain optional directories.  An ``image/`` directory is a common subdirectory to contain rendered images.
 
 .. code:: bash
 
@@ -15,18 +15,18 @@ The *database_name.cdb* directory may optionally contain other data files refere
       ... image                 # a directory for images
       ... data.csv
 
-The first row of the **data.csv** file is a required row of unique non-empty strings that are the column headers for each column.  Each column is a data abstract -- a variable, parameter, (optional) image file, or (optional) data file such as a vti file, or a csv file.  All data values must be floats, integers, strings, or empty (missing) values and must have the same values for all rows of that column (except when empty).
+The first row of the ``data.csv`` file is a required row of unique non-empty strings that are the column headers for each column.  Each column is a data abstract -- a variable, parameter, (optional) image file, or (optional) data file such as a vti file, or a csv file.  All data values must be floats, integers, strings, or empty (missing) values and must have the same values for all rows of that column (except when empty).
 
-The last header values may either be **FILE** or start with **FILE** (e.g., **FILE,FILE1,FILE2**). No other non-FILE columns may be placed after the first **FILE** column (**FILE** columns are always last).
+The last header values may either be ``FILE`` or start with ``FILE`` (e.g., ``FILE,FILE1,FILE2``). No other non-FILE columns may be placed after the first ``FILE`` column (``FILE`` columns are always last).
 
-Each row after the header is a data row.  At least one data row must exist.  The first non-empty value in each column establishes the data type.  The database can be extended simply by appending the **data.csv** file.
+Each row after the header is a data row.  At least one data row must exist.  The first non-empty value in each column establishes the data type.  The database can be extended simply by appending the ``data.csv`` file.
 
 A data value representing a file path must be a string containing either a) a POSIX file path, or b) a URL.  Files can be of any type, as indicated by MIME name extension, e.g., .png, .vti, .txt, etc.
 
 Example: Nyx Cosmology Simulation
 ---------------------------------
 
-This example shows the header row and first few rows of the **data.csv** file for a Nyx Cosmology simulation.  The images show dark matter density for 31 time steps, 6 phi values, 8 theta values and 5 density isosurfaces.   The  columns include variables that define the image: time, phi, theta, and iso, along with data derived from the simulation or from the images themselves: entropy, sample number, Hu moments and a Canny edge calculation.  The last column (FILE) points to the image described by that row.
+This example shows the header row and first few rows of the ``data.csv`` file for a Nyx Cosmology simulation.  The images show dark matter density for 31 time steps, 6 phi values, 8 theta values and 5 density isosurfaces.   The  columns include variables that define the image: time, phi, theta, and iso, along with data derived from the simulation or from the images themselves: entropy, sample number, Hu moments and a Canny edge calculation.  The last column (FILE) points to the image described by that row.
 
 ::
 

@@ -11,13 +11,13 @@ Converting Spec A to Spec D databases
 
 It is necessary at times to convert a Spec A to a Spec D Cinema database (CDB).  Spec A CDBs are available from ParaView v5.6 and earlier, from VisIt, from Ascent or you may have an older CDB that needs to be updated.
 
-The cinema_lib library can be used to upgrade a Spec A CDB.  Follow the instructions for downloading and installing from the `cinema_lib`_ Github page or see :ref:`label_cinema_lib`.  Included in that download is a **upgrade_cinema_database** script:
+The cinema_lib library can be used to upgrade a Spec A CDB.  Follow the instructions for downloading and installing from the `cinema_lib`_ Github page or see :ref:`label_cinema_lib`.  Included in that download is a ``upgrade_cinema_database`` script:
 
 .. code::
 
   cinema_lib/cinema_lib/upgrade_cinema_database
 
-Simply run the **upgrade_cinema_database** script giving the path to your Spec A database.  This will result in the generation of a Spec D compliant  **data.csv** file.  Once converted, the Spec D CDB can be viewed with your favorite Cinema viewer, :ref:`label_viewers`.
+Simply run the ``upgrade_cinema_database`` script giving the path to your Spec A database.  This will result in the generation of a Spec D compliant  ``data.csv`` file.  Once converted, the Spec D CDB can be viewed with your favorite Cinema viewer, :ref:`label_viewers`.
 
 .. code:: bash
 
@@ -33,8 +33,8 @@ To use the browser-based viewers, you **MUST** allow local file access. Do this 
 
 - **Firefox (preferred)**
     - In the brower search bar, enter ``about:config``
-    - Set ``privacy.file_unique_origin`` to **false**
-    - Set ``security.fileuri.strict_origin_policy`` to **false**
+    - Set ``privacy.file_unique_origin`` to ``false``
+    - Set ``security.fileuri.strict_origin_policy`` to ``false``
 
 - **Safari**
     - Safari->Preferences->Advanced->Show Develop menu in menu bar
@@ -43,7 +43,7 @@ To use the browser-based viewers, you **MUST** allow local file access. Do this 
 - **Chrome**
     - open **chrome** with the option ``--disable-web-security``
     - Mac example:
-        ``open -na "Google Chrome" cinema_view.html --args --user-data-dir="<path/to/repo>" --disable-web-security``
+        open -na "Google Chrome" cinema_view.html --args --user-data-dir="<path/to/repo>" --disable-web-security
 
 The `CinemaScience GitHub`_ page and the `CinemaScience website`_ are useful sources for more information and ideas.
 

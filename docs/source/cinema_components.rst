@@ -5,37 +5,37 @@ cinema_components Library
 
 CinemaScience includes a library of viewer components that can be added by the user to create analysis and data specific viewers. These components include:
 
-- **PcoordSVG** -- A component for viewing and browsing a database on a Parallel Coordinates Chart (rendered with SVG).
-- **PcoordCanvas** -- A component for viewing and browsing a database on a Parallel Coordinates Chart (rendered with Canvas).
+- ``PcoordSVG`` -- A component for viewing and browsing a database on a Parallel Coordinates Chart (rendered with SVG).
+- ``PcoordCanvas`` -- A component for viewing and browsing a database on a Parallel Coordinates Chart (rendered with Canvas).
 
 .. image:: images/cc_parallelcoords.png
     :width: 95%
     :alt: parallel coordinates image
     :align: left
 
-- **Glyph** -- A component for viewing data on a Glyph Chart.
+- ``Glyph`` -- A component for viewing data on a Glyph Chart.
 
 .. image:: images/cc_glyph.png
     :width: 95%
     :alt: glyph image
     :align: left
 
-- **ImageSpread** -- A component for viewing image data for a set of data points.
+- ``ImageSpread`` -- A component for viewing image data for a set of data points.
 
 .. image:: images/cc_imagespread.png
     :width: 95%
     :alt:  image spread
     :align: left
 
-- **Query** -- A component that provides an interface for defining a custom data point and querying the database for similar points.
+- ``Query`` -- A component that provides an interface for defining a custom data point and querying the database for similar points.
 
 .. image:: images/cc_query.png
     :width: 95%
     :alt: query image
     :align: left
 
-- **ScatterPlotSVG** -- A component for viewing data on a Scatter plot (rendered with SVG).
-- **ScatterPlotCanvas** -- A component for viewing data on a Scatter plot (rendered with Canvas).
+- ``ScatterPlotSVG`` -- A component for viewing data on a Scatter plot (rendered with SVG).
+- ``ScatterPlotCanvas`` -- A component for viewing data on a Scatter plot (rendered with Canvas).
 
 .. image:: images/cc_scatterplot.png
     :width: 95%
@@ -45,7 +45,7 @@ CinemaScience includes a library of viewer components that can be added by the u
 Example Use Case
 ^^^^^^^^^^^^^^^^
 
-Cinema viewers are JavaScript/HTML/CSS based and use D3 to link data and user actions.  Below is a simple example of a browser page that uses a pcoordSVG component to control the display of an ImageSpread component for a database name **mydata.cdb** located in the same directory:
+Cinema viewers are JavaScript/HTML/CSS based and use D3 to link data and user actions.  Below is a simple example of a browser page that uses a pcoordSVG component to control the display of an ImageSpread component for a database name ``mydata.cdb`` located in the same directory:
 
 .. code:: HTML
 
@@ -80,6 +80,6 @@ Cinema viewers are JavaScript/HTML/CSS based and use D3 to link data and user ac
     </body>
   </html>
 
-Full details on the use of cinema_components is on the `cinema_components GitHub`_ page.  
+Full details on the use of cinema_components is on the `cinema_components GitHub`_ page.
 
 .. _cinema_components GitHub : https://github.com/cinemascience/cinema_components
