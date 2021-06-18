@@ -15,12 +15,19 @@ Cinema is developed by the `Data Science at Scale Team`_  at `Los Alamos Nationa
 
 All of our software is open source, and is available at the `CinemaScience GitHub`_  page.  We invite the community to contribute code, documentation, examples, bug fixes, etc.  Simply issue a pull request.
 
+Cinema Citation
+---------------
+If using Cinema in your analysis, please cite the original publication introducing Cinema:
+
+  * James Ahrens, Sébastien Jourdain, Patrick O'Leary, John Patchett, David H. Rogers, and Mark Petersen. An image-based approach to extreme scale in situ visualization and analysis. In Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC '14). IEEE Press, Piscataway, NJ, USA, 424-434, 2014.  `DOI 10.1109/SC.2014.40`_
+
 .. _ParaView : https://www.paraview.org/
 .. _VisIt : https://wci.llnl.gov/simulation/computer-codes/visit
 .. _Ascent : https://alpine-dav.github.io/ascent/
 .. _Data Science at Scale Team : https://dsscale.org
 .. _Los Alamos National Laboratory :  https://www.lanl.gov
 .. _CinemaScience GitHub : https://github.com/cinemascience
+.. _DOI 10.1109/SC.2014.40 : https://ieeexplore.ieee.org/document/7013022
 
 .. toctree::
    :maxdepth: 1

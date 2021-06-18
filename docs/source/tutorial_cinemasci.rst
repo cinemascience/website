@@ -7,13 +7,13 @@ This tutorial uses the `Supercomputng Cinema tutorial`_.
 
 The jupyter notebook workflow needs the following installed:
 
-  * Python 3.7 or above
-  * pandas, numpy
-  * os, shutil
-  * cinemasci v1.4
-  *  openCV 4.4 (opencv-python)
-  * skimage (scikit-image)
-  * notebook, jupyterLab
+  * ``Python 3.7`` or above
+  * ``pandas``, ``numpy``
+  * ``os``, ``shutil``
+  * ``cinemasci v1.4``
+  *  ``openCV 4.4`` (``opencv-python``)
+  * ``skimage`` (``scikit-image``)
+  * ``notebook``, ``jupyterLab``
 
   Start by cloning the full tutorial repository and navigating to the pngviewer subdirectory:
 

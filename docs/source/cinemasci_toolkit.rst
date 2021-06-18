@@ -10,7 +10,7 @@ Requirements
 
 Minimum Requirements are:
 
-- Python 3.7 or above
+- ``Python 3.7`` or above
 
 This project uses coding standards spelled out in `PEP8`_.
 
