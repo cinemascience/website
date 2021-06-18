@@ -9,14 +9,19 @@ A good way to get started is to read the `Supercomputing Paper`_ that first desc
 
 Video examples, sample data, and viewer downloads are available on the `CinemaScience website`_.
 
-Interactive Tutorial
-^^^^^^^^^^^^^^^^^^^^
+Tutorial
+--------
 
-An interactive tutorial can be downloaded from the `cinema_tutorial`_ GitHub page.
+The most recent interactive tutorial can be downloaded from the `CinemaScience GitHub`_ page.
+
+  * `2020 Supercomputing Tutorial`_
+
 
 .. _Supercomputing Paper : https://datascience.lanl.gov/data/papers/SC14.pdf
 .. _CinemaScience website :  https://cinemascience.github.io/
 .. _cinema_tutorial : https://github.com/cinemascience/cinema_tutorial
+.. _CinemaScience GitHub : https://github.com/cinemascience
+.. _2020 Supercomputing Tutorial : https://github.com/cinemascience/cinema_tutorial_2020-SC
 
 .. toctree::
    :maxdepth: 1
